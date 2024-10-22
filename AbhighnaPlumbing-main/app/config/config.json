@@ -1,0 +1,17 @@
+{
+    "dbName": "node-mssql-crud-api",
+    "dbConfig": {
+        "server": "sql5106.site4now.net",
+        "options": {
+            "port": 1433,
+            "trustServerCertificate": true
+        },
+        "authentication": {
+            "type": "default",
+            "options": {
+                "userName": "db_aae43c_abhigna",
+                "password": "09r11a0222"
+            }
+        }
+    }
+}
