@@ -9,9 +9,7 @@ const sql = require('mssql');
 async function getAllLookups(req, res) {
     try {
         let pool=await sql.connect();
-        console.log('teste');
         const result = await pool.request().execute('[dbo].[GetALLLookup]');
-        console.log(result)
 
         if (result.recordset && result.recordset.length > 0) {
             // return res.status(200).json(result.recordset);
@@ -30,7 +28,6 @@ async function getAllLookupByID(req, res) {
     try {
         // Validate if LookupID is provided
         const { LookupID } = req.params;
-console.log(req)
         // Validate if LookupID is provided
         if (!LookupID) {
             return res.status(400).json({
@@ -41,7 +38,6 @@ console.log(req)
         const result = await pool.request()
             .input('LookupID', sql.Int, LookupID)  // Provide the LookupID parameter
             .execute('[dbo].[GetALLLookupByID]');
-        console.log(result)
 
         if (result.recordset && result.recordset.length > 0) {
             // return res.status(200).json(result.recordset);
@@ -60,11 +56,10 @@ console.log(req)
 async function saveLookup(req, res) {
     try {
         // Get the input parameters from the request body
-        const { LookupID, LookupCode, LookupDescription, LookupCategory, Status, CreatedBy } = req.body;
-        console.log(req.body);
+        const { LookupID, LookupCode, LookupDescription, LookupCategory, Status, CreatedBy,IsActive } = req.body;
         let pool=await sql.connect();
         // Connect to SQL Server
-
+console.log(req.body);
         // Execute the stored procedure
         const result = await pool.request()
             .input('LookupID', sql.Int, LookupID || null)  // Pass null if LookupID is not provided (for insert)
@@ -79,12 +74,12 @@ async function saveLookup(req, res) {
 
         // Return success response
         return res.status(201).json({
-            message: 'Product created successfully',
+            message: 'lookup created successfully',
             data: result.recordset || null,
             isSuccess:true
         });
     } catch (error) {
-        console.error('Error creating product:', error);
+        console.error('Error creating lookup:', error);
          return res.status(500).json({ isSuccess:false, message:'Error creating lookup'});
     }
 };

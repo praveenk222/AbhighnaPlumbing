@@ -9,9 +9,7 @@ const sql = require('mssql');
 async function getAllProducts(req, res) {
     try {
         let pool=await sql.connect();
-        console.log('teste');
         const result = await pool.request().execute('[dbo].[GetAllProducts]');
-        console.log(result)
 
         if (result.recordset && result.recordset.length > 0) {
             // return res.status(200).json(result.recordset);
@@ -24,6 +22,28 @@ async function getAllProducts(req, res) {
     } catch (error) {
         console.error('Error fetching products:', error.message);
         return res.status(500).json({ message: 'Error fetching products' }); // Improved error handling
+    }
+}
+async function getProductByID(req, res) {
+    try {
+        let pool=await sql.connect();
+        const { ID } = req.params;
+        console.log(ID)
+        const result = await pool.request()  
+            .input('ID', sql.Int, ID)
+             .execute('[dbo].[GetProductsByID]');
+
+        if (result.recordset && result.recordset.length > 0) {
+            // return res.status(200).json(result.recordset);
+            return res.status(200).json(result.recordset);
+            //result will give all  about table with data
+            // res.send(result.rows);  // Send the fetched products
+        } else {
+            return res.status(500).json({isSuccess:false, message: 'Error no products' });   // Handle no data found
+        }
+    } catch (error) {
+        console.error('Error fetching products:', error.message);
+        return res.status(500).json({isSuccess:false, message: 'Error fetching products' }); // Improved error handling
     }
 }
 
@@ -53,7 +73,8 @@ async function getAllProducts(req, res) {
                 modifiedBy,
                 TypeID,
                 MeasurementValue,
-                MesurmentID
+                MesurmentID,
+                IsActive
             } = req.body;
             // Connect to the database
             const pool = await sql.connect();
@@ -81,7 +102,6 @@ async function getAllProducts(req, res) {
             .input('IsActive', sql.Bit, IsActive)
             .execute('[dbo].[InsertOrUpdateProductAndMeasurements]');
             // Return success response
-            console.log(res)
            return res.status(201).json({
             isSuccess:true,
                 message: 'Product created successfully',
@@ -95,7 +115,7 @@ async function getAllProducts(req, res) {
 //this is the sample ex of sp calling using select statment (imp)
 module.exports = {
     getAllUser: getAllProducts,
-    // getById:getCardsById,
+     getById:getProductByID,
     createProduct:createProduct
  
 }

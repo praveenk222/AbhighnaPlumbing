@@ -1,21 +1,23 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CreateOrderComponent } from './create-order/create-order.component';
+import { CreateOrderComponent } from './getallorders/create-order/create-order.component';
 import { LoginComponent } from './login/login.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
-import { AddProductComponent } from './add-product/add-product.component';
+import { AddProductComponent } from './product-details/add-product/add-product.component';
 import { GetallordersComponent } from './getallorders/getallorders.component';
-import { MeasuremetTypeComponent } from './measuremet-type/measuremet-type.component';
+import { MeasuremetTypeComponent } from './LookUp/measuremet-type.component';
+import { MesurmentLookupComponent } from './mesurment-lookup/mesurment-lookup.component';
 
 
 
 const routes: Routes = [
   {path:'getProduct',component:ProductDetailsComponent},
-  {path:'addproduct',component:AddProductComponent},
+  {path:'addproduct/:id',component:AddProductComponent},
 {path:"CreateOrder",component:CreateOrderComponent},
 {path:'orderlist',component:GetallordersComponent},
 {path:'',component:LoginComponent},
-{path:'lookup',component:MeasuremetTypeComponent}
+{path:'lookup',component:MeasuremetTypeComponent},
+{path:'mlookup',component:MesurmentLookupComponent},
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

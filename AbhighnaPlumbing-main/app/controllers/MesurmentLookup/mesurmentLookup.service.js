@@ -9,10 +9,7 @@ const sql = require('mssql');
 async function getAllMesuremtnLookups(req, res) {
     try {
         let pool=await sql.connect();
-        console.log('teste');
         const result = await pool.request().execute('[dbo].[GetALLMesuerMentsLookup]');
-        console.log(result)
-
         if (result.recordset && result.recordset.length > 0) {
             // return res.status(200).json(result.recordset);
             return res.status(200).json(result.recordset);
@@ -30,7 +27,6 @@ async function getAllLookupByID(req, res) {
     try {
         // Validate if LookupID is provided
         const { LookupID } = req.params;
-console.log(req)
         // Validate if LookupID is provided
         if (!LookupID) {
             return res.status(400).json({
@@ -41,7 +37,6 @@ console.log(req)
         const result = await pool.request()
             .input('LookupID', sql.Int, LookupID)  // Provide the LookupID parameter
             .execute('[dbo].[GetALLLookupByID]');
-        console.log(result)
 
         if (result.recordset && result.recordset.length > 0) {
             // return res.status(200).json(result.recordset);
@@ -61,7 +56,6 @@ async function savemesurmentLookup(req, res) {
     try {
         // Get the input parameters from the request body
         const { LookupID, LookupCode, LookupDescription, LookupCategory, Status, CreatedBy } = req.body;
-        console.log(req.body);
         let pool=await sql.connect();
         // Connect to SQL Server
 

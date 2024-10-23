@@ -50,7 +50,7 @@ show(){
     });
   }
   loginAdmin(data:any):Observable<any>{
-  return this.http.post(this.apiUrl + `customers/adminLogin`, data);
+  return this.http.post(`http://localhost:8080/api/members/login`, data);
   }
   signup(data:any):Observable<any>{
     return this.http.post(this.m_apiUrl+`members`,data)

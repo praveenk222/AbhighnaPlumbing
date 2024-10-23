@@ -12,6 +12,9 @@ export class ProductDetailsService {
   getProductDetails():Observable<any>{
    return this.http.get('http://localhost:8080/api/products')
   }
+  getProductDetailsById(id:number):Observable<any>{
+   return this.http.get(`http://localhost:8080/api/products/${id}`)
+  }
   addProduct(data:any):Observable<any>{
     return this.http.post('http://localhost:8080/api/products',data)
   }
@@ -22,7 +25,7 @@ export class ProductDetailsService {
     return this.http.post<any>(`http://localhost:8080/api/lookup/${id}`, product);
   }
 
-  deleteProduct(id: string,product: any): Observable<void> {
-    return this.http.post<any>(`http://localhost:8080/api/lookup/${id}`,product);
+  deleteProduct(product: any): Observable<void> {
+    return this.http.post<any>(`http://localhost:8080/api/products`,product);
   }
 }

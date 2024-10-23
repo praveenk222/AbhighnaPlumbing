@@ -8,33 +8,28 @@ const sql = require('mssql');
 async function getUsers(req,res){debugger
     try {
         let pool=await poolc.connect();
-        console.log('teste');
         const result = await pool.query('SELECT * FROM operation.member')
-        console.log(result)
-        console.log(result.rows)
         //result will give all  about table with data
         res.send(result.rows);
 
     } catch (err) {
-        console.log(err.message);
         res.status(500).send('Internal Server Error')
     }
 }
 
 async function login(req,res){debugger
     try {
-        let pool=await poolc.connect();
-        console.log('teste');
-        const result = await pool.request
-        .input('Username ', sql.NVarChar, req.UserID)
-        .input('Password ', sql.NVarChar, req.Password)
+        const pool = await sql.connect();
+
+        console.log(req.body);
+        const result = await pool.request()
+        .input('Username', sql.NVarChar, req.body.UserName)
+        .input('Password', sql.NVarChar, req.body.Password)
             .execute('UserLogin')
-        console.log(result)
         //result will give all  about table with data
-        res.send(result.rows);
+        res.send(result.recordset);
 
     } catch (err) {
-        console.log(err.message);
         res.status(500).send('Internal Server Error')
     }
 }
@@ -44,7 +39,6 @@ async function getUserPermissions(req, res) {
     try {
         // Get UserID from request parameters
         const { UserID } = req.params;
-        console.log(UserID)
 
         // Validate if UserID is provided
         if (!UserID) {

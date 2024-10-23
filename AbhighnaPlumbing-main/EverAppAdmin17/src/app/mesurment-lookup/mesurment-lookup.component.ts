@@ -1,17 +1,19 @@
 import { Component } from '@angular/core';
 import { MeasuremetTypeService } from '../measuremet-type.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MatTableDataSource } from '@angular/material/table';
 
 @Component({
-  selector: 'app-measuremet-type',
-  templateUrl: './measuremet-type.component.html',
-  styleUrl: './measuremet-type.component.css'
+  selector: 'app-mesurment-lookup',
+  templateUrl: './mesurment-lookup.component.html',
+  styleUrl: './mesurment-lookup.component.css'
 })
-export class MeasuremetTypeComponent {
-
+export class MesurmentLookupComponent {
+  displayedColumns: string[] = ['CustomerID', 'TotalAmount', 'OrderDate', 'IsCompleted','actions'];
+  dataSource = new MatTableDataSource<any>();
   lookupForm!: FormGroup; // FormGroup for reactive form
   lookups: any[] = []; // Array to hold retrieved lookups
-
+isShow:boolean=false;
   constructor(private fb: FormBuilder, private lookupService: MeasuremetTypeService) {
     // Initialize the form
     this.lookupForm = this.fb.group({
@@ -20,7 +22,7 @@ export class MeasuremetTypeComponent {
       LookupDescription: ['', Validators.required],
       LookupCategory: ['', Validators.required],
       Status: [1],
-      IsActive:[null],
+      IsActive:[true],
       CreatedBy: ['Admin']
     });
   }
@@ -47,9 +49,10 @@ export class MeasuremetTypeComponent {
 
   // Method to retrieve existing lookups
   retrieveLookups(): void {
-    this.lookupService.getLookups().subscribe(
+    this.lookupService.getmesurmentLookups().subscribe(
       data => {
-        this.lookups = data; // Store the retrieved lookups in the component's array
+        this.lookups = data;
+        this.dataSource.data=data; // Store the retrieved lookups in the component's array
         console.log('Lookups retrieved successfully', this.lookups);
       },
       error => {
@@ -57,4 +60,17 @@ export class MeasuremetTypeComponent {
       }
     );
   }
+  editProduct(id:number){
+    this.isShow=!this.isShow;
+
+  }
+  add(){
+    this.isShow=!this.isShow;
+
+  }
+  deleteProduct(id:number){
+
+  }
 }
+
+

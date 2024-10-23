@@ -4,6 +4,8 @@ import { ProductDetailsService } from '../services/product-details.service';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
+import { Router } from '@angular/router';
+import { SweetAlertServiceService } from '../services/sweet-alert-service.service';
 
 @Component({
   selector: 'app-product-details',
@@ -17,7 +19,8 @@ export class ProductDetailsComponent {
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
-  constructor(private productService: ProductDetailsService) {
+  constructor(private productService: ProductDetailsService,private alerts:SweetAlertServiceService,
+    private router:Router) {
     this.getProduct();
   }
 
@@ -30,22 +33,45 @@ export class ProductDetailsComponent {
       this.dataSource.data = res;
     });
   }
-  editProduct(product: any) {
-    this.productService.updateProduct(product.ProductID,product).subscribe((res) => {
-    console.log(res)
-   });
-    console.log('Edit Product:', product);
+  editProduct(id: any) {
+    this.router.navigateByUrl(`addproduct/${id}`);
+  //  this.productService.updateProduct(product.ProductID,product).subscribe((res) => {
+  //   console.log(res)
+  //  });
+  //   console.log('Edit Product:', product);
     // this.dialog.open(EditProductDialog, { data: product });
   }
 
   // Delete product
-  deleteProduct(product: any) {
-    if (confirm('Are you sure you want to delete this product?')) {
-      this.productService.deleteProduct(product.ProductID,product).subscribe((res) => {
+  // deleteProduct(product: any) {
+  //   if (confirm('Are you sure you want to delete this product?')) {
+  //     this.productService.deleteProduct(product).subscribe((res) => {
+  //       console.log(res)
+  //     });
+  //   }
+  newFunction(product: any) {
+      this.productService.deleteProduct(product).subscribe((res) => {
         console.log(res)
+        this.getProduct();
       });
-    }
+  }
 
-
-}
+  deleteProduct(data:any){
+    this.alerts.showConfirmation('Confirm Action', 'Are you sure you want to proceed?')
+    .then((confirmed) => {
+      if (confirmed) {
+        data.IsActive=false;
+        this.newFunction(data);
+        console.log('User confirmed the action');
+        // Perform the action
+      } else {
+        console.log('User canceled the action');
+        // Handle cancellation
+      }
+    })
+    .catch((error) => {
+      console.error('Something went wrong:', error);
+    });
+  
+  }
 }

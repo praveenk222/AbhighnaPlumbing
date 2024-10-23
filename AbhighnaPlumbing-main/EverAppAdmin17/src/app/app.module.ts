@@ -18,7 +18,7 @@ import { ReactiveFormsModule} from '@angular/forms';
 
 
 import { ProductDetailsComponent } from './product-details/product-details.component';
-import { AddProductComponent } from './add-product/add-product.component';
+import { AddProductComponent } from './product-details/add-product/add-product.component';
 import {NgModule} from '@angular/core';
 import {A11yModule} from '@angular/cdk/a11y';
 import {ClipboardModule} from '@angular/cdk/clipboard';
@@ -65,11 +65,12 @@ import {MatTreeModule} from '@angular/material/tree';
 import {OverlayModule} from '@angular/cdk/overlay';
 import { NavComponent } from './nav/nav.component';
 import {  GetallordersComponent } from './getallorders/getallorders.component';
-import { CreateOrderComponent } from './create-order/create-order.component';
+import { CreateOrderComponent } from './getallorders/create-order/create-order.component';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { LoginComponent } from './login/login.component';
-import { MeasuremetTypeComponent } from './measuremet-type/measuremet-type.component';
+import { MeasuremetTypeComponent } from './LookUp/measuremet-type.component';
+import { MesurmentLookupComponent } from './mesurment-lookup/mesurment-lookup.component';
 
 @NgModule({
   declarations: [
@@ -81,6 +82,7 @@ import { MeasuremetTypeComponent } from './measuremet-type/measuremet-type.compo
     NavComponent,
     LoginComponent,
     MeasuremetTypeComponent,
+    MesurmentLookupComponent,
 
   ],
   imports: [
