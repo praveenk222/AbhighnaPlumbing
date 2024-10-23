@@ -78,6 +78,7 @@ async function getAllProducts(req, res) {
             .input('TypeID', sql.Int, TypeID)
             .input('MeasurementValue', sql.Decimal(18, 2), MeasurementValue)
             .input('MesurmentID', sql.Int, MesurmentID)
+            .input('IsActive', sql.Bit, IsActive)
             .execute('[dbo].[InsertOrUpdateProductAndMeasurements]');
             // Return success response
             console.log(res)

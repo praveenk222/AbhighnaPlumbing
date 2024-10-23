@@ -73,6 +73,8 @@ async function saveLookup(req, res) {
             .input('LookupCategory', sql.NVarChar(100), LookupCategory)
             .input('Status', sql.Bit, Status)
             .input('CreatedBy', sql.NVarChar(100), CreatedBy)
+            .input('IsActive', sql.Bit, IsActive)
+
             .execute('[dbo].[InsertOrUpdateLookup]');  // Replace with the actual stored procedure name
 
         // Return success response
