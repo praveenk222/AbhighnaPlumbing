@@ -8,6 +8,7 @@ const memberService = require('./members.service');
 // routes
 
 router.get('/', memberService.getAllUser);
+router.post('/login', memberService.Login);
 router.get('/getUserPermissions/:UserID', memberService.getUserPermissions);
 // router.get('/:id', getById);
 

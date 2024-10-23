@@ -20,6 +20,24 @@ async function getUsers(req,res){debugger
         res.status(500).send('Internal Server Error')
     }
 }
+
+async function login(req,res){debugger
+    try {
+        let pool=await poolc.connect();
+        console.log('teste');
+        const result = await pool.request
+        .input('Username ', sql.NVarChar, req.UserID)
+        .input('Password ', sql.NVarChar, req.Password)
+            .execute('UserLogin')
+        console.log(result)
+        //result will give all  about table with data
+        res.send(result.rows);
+
+    } catch (err) {
+        console.log(err.message);
+        res.status(500).send('Internal Server Error')
+    }
+}
 //this is the sample ex of sp calling using select statment (imp)
 // Function to get user permissions based on their ID
 async function getUserPermissions(req, res) {
@@ -68,5 +86,6 @@ async function getUsersSP(req,res){debugger
 module.exports = {
     getAllUser: getUsers,
     getUserPermissions:getUserPermissions,
+    Login:login
  
 }
