@@ -1,824 +1,139 @@
-<!-- <div class="parent">
 
-<div class="frame-8725">
-    <div class="frame-8724">
-        <div class="frame-2608320">
-            <div class="frame-2608414">
-                <div class="dashboard">Dashboard</div>
-                <div class="filter">
-                    <div class="frame-2608377">
-                        <svg class="uis-calender" width="18" height="18" viewBox="0 0 18 18" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M1.5 14.25C1.5 15.525 2.475 16.5 3.75 16.5H14.25C15.525 16.5 16.5 15.525 16.5 14.25V8.25H1.5V14.25ZM14.25 3H12.75V2.25C12.75 1.8 12.45 1.5 12 1.5C11.55 1.5 11.25 1.8 11.25 2.25V3H6.75V2.25C6.75 1.8 6.45 1.5 6 1.5C5.55 1.5 5.25 1.8 5.25 2.25V3H3.75C2.475 3 1.5 3.975 1.5 5.25V6.75H16.5V5.25C16.5 3.975 15.525 3 14.25 3Z"
-                                fill="#3355B9" />
-                        </svg>
-                        <div class="name">This month</div>
-                    </div>
-                    <svg class="ri-arrow-right-s-line" width="18" height="18" viewBox="0 0 18 18" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M9.00055 10.0906L14.4457 5L16 6.4552L9.00055 13L2 6.4552L3.55653 5.00103L9.00165 10.0917L9.00055 10.0906Z"
-                            fill="#3355B9" />
-                    </svg>
-                </div>
-            </div>
-            <div class="frame-2608333">
-                <a (click)="openDialog()">Open dialog</a>
-            </div>
-            <div class="frame-2608333">
-                <a (click)="openerrorDialog()">Error dialog</a>
-            </div>
-            <div class="frame-2608333">
-                <div class="generate-report">
-                <a (click)="openReport()">  
 
-                    Generate report
-                </a>
-                </div>
-            </div>
-        </div>
-        <div class="frame-8726">
-            <div class="parent">
-            <div class="frame-8705">
-                <div class="frame-8718">
-                    <div class="mingcute-wheel-fill">
-                        <svg class="group" width="36" height="36" viewBox="0 0 36 36" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M18 3C26.2845 3 33 9.7155 33 18C33 26.2845 26.2845 33 18 33C9.7155 33 3 26.2845 3 18C3 9.7155 9.7155 3 18 3ZM15.795 22.7955L14.6745 24.4755C14.199 25.1895 13.9215 26.5215 14.9685 27.4365C15.591 27.981 16.581 28.5015 18 28.5015C19.419 28.5015 20.409 27.981 21.0315 27.4365C22.0785 26.5215 21.801 25.1895 21.3255 24.477L20.205 22.7955C19.9629 22.4326 19.635 22.135 19.2504 21.9292C18.8657 21.7234 18.4362 21.6158 18 21.6158C17.5638 21.6158 17.1343 21.7234 16.7496 21.9292C16.365 22.135 16.0371 22.4326 15.795 22.7955ZM25.188 16.839L23.2425 17.385C22.8225 17.503 22.4381 17.7228 22.1235 18.025C21.8088 18.3272 21.5736 18.7024 21.4388 19.1172C21.3039 19.5321 21.2735 19.9739 21.3503 20.4033C21.4271 20.8327 21.6087 21.2366 21.879 21.579L23.1315 23.1645C23.6625 23.8365 24.8445 24.5145 26.0385 23.8005C26.748 23.376 27.549 22.596 27.9885 21.246C28.4265 19.896 28.2375 18.7935 27.912 18.033C27.366 16.7535 26.0115 16.6065 25.188 16.839ZM10.812 16.839C9.987 16.6065 8.634 16.7535 8.088 18.033C7.7625 18.7935 7.5735 19.8945 8.013 21.246C8.451 22.596 9.2505 23.376 9.963 23.8005C11.085 24.471 12.198 23.9115 12.768 23.283L12.8685 23.1645L14.121 21.579C14.3802 21.2509 14.558 20.8662 14.6401 20.4562C14.7222 20.0463 14.7061 19.6227 14.5931 19.2201C14.4802 18.8176 14.2737 18.4474 13.9903 18.14C13.707 17.8325 13.355 17.5964 12.963 17.451L12.7575 17.385L10.812 16.839ZM11.8275 9.504C10.6785 10.338 10.185 11.34 10.0005 12.1485C9.6915 13.503 10.6995 14.418 11.502 14.715L13.398 15.417C13.8071 15.5682 14.2472 15.616 14.6792 15.5564C15.1113 15.4967 15.5219 15.3313 15.8747 15.075C16.2275 14.8186 16.5116 14.4791 16.7018 14.0866C16.892 13.6941 16.9824 13.2608 16.965 12.825L16.884 10.8045C16.8495 9.9495 16.2915 8.7075 14.907 8.5845C14.082 8.5095 12.975 8.67 11.8275 9.504ZM24.1725 9.504C23.025 8.67 21.918 8.5095 21.0945 8.583C19.7895 8.7 19.2195 9.807 19.128 10.65L19.116 10.8045L19.035 12.825C19.0185 13.2432 19.1012 13.6595 19.2765 14.0396C19.4517 14.4197 19.7145 14.7529 20.0433 15.0119C20.3721 15.2709 20.7576 15.4483 21.1682 15.5297C21.5788 15.6111 22.0028 15.594 22.4055 15.48L22.602 15.417L24.498 14.715C25.3005 14.418 26.3085 13.503 25.9995 12.147C25.8165 11.34 25.3215 10.338 24.1725 9.504Z"
-                                fill="#3355B9" />
-                        </svg>
-                    </div>
-                    <div class="frame-8717">
-                        <div
-                            class="streamline-money-graph-arrow-increase-ascend-growth-up-arrow-stats-graph-right-grow">
-                            <svg class="group2" width="16" height="9" viewBox="0 0 16 9" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10.8571 0.5H15.4286V5.07143" stroke="#19744C" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path
-                                    d="M15.4286 0.5L8.97143 6.95714C8.86461 7.06184 8.721 7.12049 8.57143 7.12049C8.42185 7.12049 8.27824 7.06184 8.17143 6.95714L5.54286 4.32857C5.43604 4.22387 5.29243 4.16522 5.14286 4.16522C4.99328 4.16522 4.84967 4.22387 4.74286 4.32857L0.571426 8.5"
-                                    stroke="#19744C" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </div>
-                        <div class="_20-9">20.9%</div>
-                    </div>
-                </div>
-                <div class="frame-8714">
-                    <div class="total-vehicles">Total vehicles</div>
-                    <div class="_3-500">3,500</div>
-                </div>
-            </div>
-            <div class="frame-87172">
-                <div class="frame-8718">
-                    <svg class="material-symbols-deployed-code-history-rounded" width="36" height="36"
-                        viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M26.25 26.7V23.25C26.25 23.05 26.175 22.875 26.025 22.725C25.875 22.575 25.7 22.5 25.5 22.5C25.3 22.5 25.125 22.575 24.975 22.725C24.825 22.875 24.75 23.05 24.75 23.25V26.6625C24.75 26.8625 24.7875 27.0565 24.8625 27.2445C24.9375 27.4325 25.05 27.601 25.2 27.75L27.45 30C27.6 30.15 27.775 30.225 27.975 30.225C28.175 30.225 28.35 30.15 28.5 30C28.65 29.85 28.725 29.675 28.725 29.475C28.725 29.275 28.65 29.1 28.5 28.95L26.25 26.7ZM16.5 3.4125C16.975 3.1375 17.475 3 18 3C18.525 3 19.025 3.1375 19.5 3.4125L30 9.45C30.475 9.725 30.844 10.0875 31.107 10.5375C31.37 10.9875 31.501 11.4875 31.5 12.0375V18.375C30.65 17.775 29.7185 17.3125 28.7055 16.9875C27.6925 16.6625 26.624 16.5 25.5 16.5C25.075 16.5 24.6685 16.519 24.2805 16.557C23.8925 16.595 23.499 16.6635 23.1 16.7625L28.5 13.65V12.075L26.8875 11.1375L18 16.275L9.1125 11.1375L7.5 12.075V13.65L16.5 18.8625V21.6C16.025 22.4 15.656 23.25 15.393 24.15C15.13 25.05 14.999 26 15 27C15 28.05 15.144 29.05 15.432 30C15.72 30.95 16.126 31.8375 16.65 32.6625C16.625 32.6375 16.6 32.625 16.575 32.625C16.55 32.625 16.525 32.6125 16.5 32.5875L6 26.55C5.525 26.275 5.156 25.9125 4.893 25.4625C4.63 25.0125 4.499 24.5125 4.5 23.9625V12.0375C4.5 11.4875 4.6315 10.9875 4.8945 10.5375C5.1575 10.0875 5.526 9.725 6 9.45L16.5 3.4125ZM25.5 34.5C23.425 34.5 21.656 33.7685 20.193 32.3055C18.73 30.8425 17.999 29.074 18 27C18 24.925 18.7315 23.156 20.1945 21.693C21.6575 20.23 23.426 19.499 25.5 19.5C27.575 19.5 29.344 20.2315 30.807 21.6945C32.27 23.1575 33.001 24.926 33 27C33 29.075 32.2685 30.844 30.8055 32.307C29.3425 33.77 27.574 34.501 25.5 34.5Z"
-                            fill="#3355B9" />
-                    </svg>
-                    <div class="frame-8717">
-                        <div
-                            class="streamline-money-graph-arrow-increase-ascend-growth-up-arrow-stats-graph-right-grow">
-                            <svg class="group3" width="16" height="9" viewBox="0 0 16 9" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10.8571 0.5H15.4286V5.07143" stroke="#19744C" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path
-                                    d="M15.4286 0.5L8.97143 6.95714C8.86461 7.06184 8.721 7.12049 8.57143 7.12049C8.42185 7.12049 8.27824 7.06184 8.17143 6.95714L5.54286 4.32857C5.43604 4.22387 5.29243 4.16522 5.14286 4.16522C4.99328 4.16522 4.84967 4.22387 4.74286 4.32857L0.571426 8.5"
-                                    stroke="#19744C" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </div>
-                        <div class="_16-08">16.08%</div>
-                    </div>
-                </div>
-                <div class="frame-8714">
-                    <div class="total-bookings">Total bookings</div>
-                    <div class="_1-000">1,000</div>
-                </div>
-            </div>
-            <div class="frame-87182">
-                <div class="frame-8718">
-                    <svg class="fluent-phone-update-checkmark-20-filled" width="36" height="36" viewBox="0 0 36 36"
-                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M9 28.8001C9 29.7549 9.37928 30.6706 10.0544 31.3457C10.7295 32.0208 11.6452 32.4001 12.6 32.4001H18.4626C16.9967 30.6283 16.1963 28.3997 16.2 26.1001C16.2 24.6259 16.5222 23.2273 17.1 21.9709V12.9727L15.0372 15.0373C14.9535 15.121 14.8542 15.1874 14.7449 15.2326C14.6355 15.2779 14.5183 15.3012 14.4 15.3012C14.2817 15.3012 14.1645 15.2779 14.0551 15.2326C13.9458 15.1874 13.8465 15.121 13.7628 15.0373C13.6791 14.9536 13.6127 14.8543 13.5675 14.7449C13.5222 14.6356 13.4989 14.5184 13.4989 14.4001C13.4989 14.2818 13.5222 14.1646 13.5675 14.0552C13.6127 13.9459 13.6791 13.8466 13.7628 13.7629L17.3628 10.1629C17.4464 10.0791 17.5457 10.0126 17.6551 9.96722C17.7644 9.92184 17.8816 9.89849 18 9.89849C18.1184 9.89849 18.2356 9.92184 18.3449 9.96722C18.4543 10.0126 18.5536 10.0791 18.6372 10.1629L22.2372 13.7629C22.4062 13.9319 22.5011 14.1611 22.5011 14.4001C22.5011 14.6391 22.4062 14.8683 22.2372 15.0373C22.0682 15.2063 21.839 15.3012 21.6 15.3012C21.361 15.3012 21.1318 15.2063 20.9628 15.0373L18.9 12.9727V19.3051C19.9284 18.2121 21.1924 17.368 22.5959 16.8368C23.9995 16.3057 25.5057 16.1014 27 16.2397V7.2001C27 6.24532 26.6207 5.32964 25.9456 4.65451C25.2705 3.97938 24.3548 3.6001 23.4 3.6001H12.6C11.6452 3.6001 10.7295 3.97938 10.0544 4.65451C9.37928 5.32964 9 6.24532 9 7.2001V28.8001ZM34.2 26.1001C34.2 28.2484 33.3466 30.3086 31.8276 31.8277C30.3085 33.3467 28.2483 34.2001 26.1 34.2001C23.9517 34.2001 21.8915 33.3467 20.3724 31.8277C18.8534 30.3086 18 28.2484 18 26.1001C18 23.9518 18.8534 21.8916 20.3724 20.3725C21.8915 18.8535 23.9517 18.0001 26.1 18.0001C28.2483 18.0001 30.3085 18.8535 31.8276 20.3725C33.3466 21.8916 34.2 23.9518 34.2 26.1001ZM30.3372 22.7629C30.2536 22.6791 30.1543 22.6126 30.0449 22.5672C29.9356 22.5218 29.8184 22.4985 29.7 22.4985C29.5816 22.4985 29.4644 22.5218 29.3551 22.5672C29.2457 22.6126 29.1464 22.6791 29.0628 22.7629L24.3 27.5275L23.1372 26.3629C22.9682 26.1939 22.739 26.099 22.5 26.099C22.261 26.099 22.0318 26.1939 21.8628 26.3629C21.6938 26.5319 21.5989 26.7611 21.5989 27.0001C21.5989 27.2391 21.6938 27.4683 21.8628 27.6373L23.6628 29.4373C23.7464 29.5211 23.8457 29.5876 23.9551 29.633C24.0644 29.6784 24.1816 29.7017 24.3 29.7017C24.4184 29.7017 24.5356 29.6784 24.6449 29.633C24.7543 29.5876 24.8536 29.5211 24.9372 29.4373L30.3372 24.0373C30.421 23.9537 30.4875 23.8544 30.5329 23.745C30.5783 23.6357 30.6016 23.5185 30.6016 23.4001C30.6016 23.2817 30.5783 23.1645 30.5329 23.0552C30.4875 22.9458 30.421 22.8465 30.3372 22.7629Z"
-                            fill="#3256B5" />
-                    </svg>
-                    <div class="frame-8717">
-                        <div class="streamline-money-graph-arrow-decrease-down-stats-graph-descend-right-arrow">
-                            <svg class="group4" width="16" height="9" viewBox="0 0 16 9" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10.8571 8.4999H15.4286V3.92847" stroke="#E34731" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path
-                                    d="M15.4286 8.5L8.97143 2.04286C8.86461 1.93816 8.721 1.87951 8.57143 1.87951C8.42185 1.87951 8.27824 1.93816 8.17143 2.04286L5.54286 4.67143C5.43604 4.77613 5.29243 4.83478 5.14286 4.83478C4.99328 4.83478 4.84967 4.77613 4.74286 4.67143L0.571426 0.5"
-                                    stroke="#E34731" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </div>
-                        <div class="_9-00">9.00%</div>
-                    </div>
-                </div>
-                <div class="frame-8714">
-                    <div class="available">Available</div>
-                    <div class="_400">400</div>
-                </div>
-            </div>
-            <div class="frame-8719">
-                <div class="frame-8718">
-                    <svg class="material-symbols-deployed-code-history-rounded2" width="36" height="36"
-                        viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M26.25 26.7V23.25C26.25 23.05 26.175 22.875 26.025 22.725C25.875 22.575 25.7 22.5 25.5 22.5C25.3 22.5 25.125 22.575 24.975 22.725C24.825 22.875 24.75 23.05 24.75 23.25V26.6625C24.75 26.8625 24.7875 27.0565 24.8625 27.2445C24.9375 27.4325 25.05 27.601 25.2 27.75L27.45 30C27.6 30.15 27.775 30.225 27.975 30.225C28.175 30.225 28.35 30.15 28.5 30C28.65 29.85 28.725 29.675 28.725 29.475C28.725 29.275 28.65 29.1 28.5 28.95L26.25 26.7ZM16.5 3.4125C16.975 3.1375 17.475 3 18 3C18.525 3 19.025 3.1375 19.5 3.4125L30 9.45C30.475 9.725 30.844 10.0875 31.107 10.5375C31.37 10.9875 31.501 11.4875 31.5 12.0375V18.375C30.65 17.775 29.7185 17.3125 28.7055 16.9875C27.6925 16.6625 26.624 16.5 25.5 16.5C25.075 16.5 24.6685 16.519 24.2805 16.557C23.8925 16.595 23.499 16.6635 23.1 16.7625L28.5 13.65V12.075L26.8875 11.1375L18 16.275L9.1125 11.1375L7.5 12.075V13.65L16.5 18.8625V21.6C16.025 22.4 15.656 23.25 15.393 24.15C15.13 25.05 14.999 26 15 27C15 28.05 15.144 29.05 15.432 30C15.72 30.95 16.126 31.8375 16.65 32.6625C16.625 32.6375 16.6 32.625 16.575 32.625C16.55 32.625 16.525 32.6125 16.5 32.5875L6 26.55C5.525 26.275 5.156 25.9125 4.893 25.4625C4.63 25.0125 4.499 24.5125 4.5 23.9625V12.0375C4.5 11.4875 4.6315 10.9875 4.8945 10.5375C5.1575 10.0875 5.526 9.725 6 9.45L16.5 3.4125ZM25.5 34.5C23.425 34.5 21.656 33.7685 20.193 32.3055C18.73 30.8425 17.999 29.074 18 27C18 24.925 18.7315 23.156 20.1945 21.693C21.6575 20.23 23.426 19.499 25.5 19.5C27.575 19.5 29.344 20.2315 30.807 21.6945C32.27 23.1575 33.001 24.926 33 27C33 29.075 32.2685 30.844 30.8055 32.307C29.3425 33.77 27.574 34.501 25.5 34.5Z"
-                            fill="#3355B9" />
-                    </svg>
-                    <div class="frame-8717">
-                        <div
-                            class="streamline-money-graph-arrow-increase-ascend-growth-up-arrow-stats-graph-right-grow">
-                            <svg class="group5" width="16" height="9" viewBox="0 0 16 9" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10.8571 0.5H15.4286V5.07143" stroke="#19744C" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path
-                                    d="M15.4286 0.5L8.97143 6.95714C8.86461 7.06184 8.721 7.12049 8.57143 7.12049C8.42185 7.12049 8.27824 7.06184 8.17143 6.95714L5.54286 4.32857C5.43604 4.22387 5.29243 4.16522 5.14286 4.16522C4.99328 4.16522 4.84967 4.22387 4.74286 4.32857L0.571426 8.5"
-                                    stroke="#19744C" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </div>
-                        <div class="_20-08">20.08%</div>
-                    </div>
-                </div>
-                <div class="frame-8714">
-                    <div class="total-revenue">Total revenue</div>
-                    <div class="_76-100">
-                        <span>
-                            <span class="_76-100-span">₹</span>
-                            <span class="_76-100-span2">76,100</span>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div class="frame-8709">
-            <div class="chart">
-                <div class="horizontal-bar">
-                    <div class="group6">
-                        <svg class="vector16" width="2" height="8" viewBox="0 0 2 8" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.953766 7.71901V0" stroke="#363636" />
-                        </svg>
-                        <div class="_1">1</div>
-                    </div>
-                    <div class="group7">
-                        <svg class="vector17" width="2" height="8" viewBox="0 0 2 8" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.953766 7.71901V0" stroke="#363636" />
-                        </svg>
-                        <div class="_13">13</div>
-                    </div>
-                    <div class="group6">
-                        <svg class="vector18" width="2" height="8" viewBox="0 0 2 8" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.45377 7.71901V0" stroke="#363636" />
-                        </svg>
-                        <div class="_2">2</div>
-                    </div>
-                    <div class="group7">
-                        <svg class="vector19" width="2" height="8" viewBox="0 0 2 8" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.45377 7.71901V0" stroke="#363636" />
-                        </svg>
-                        <div class="_14">14</div>
-                    </div>
-                    <div class="group6">
-                        <svg class="vector20" width="2" height="8" viewBox="0 0 2 8" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.41357 7.71901V0" stroke="#363636" />
-                        </svg>
-                        <div class="_3">3</div>
-                    </div>
-                    <div class="group7">
-                        <svg class="vector21" width="2" height="8" viewBox="0 0 2 8" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.41357 7.71901V0" stroke="#363636" />
-                        </svg>
-                        <div class="_15">15</div>
-                    </div>
-                    <div class="group6">
-                        <svg class="vector22" width="2" height="8" viewBox="0 0 2 8" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.836914 7.71901V0" stroke="#363636" />
-                        </svg>
-                        <div class="_4">4</div>
-                    </div>
-                    <div class="group7">
-                        <svg class="vector23" width="2" height="8" viewBox="0 0 2 8" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.836914 7.71901V0" stroke="#363636" />
-                        </svg>
-                        <div class="_16">16</div>
-                    </div>
-                    <div class="group8">
-                        <svg class="vector24" width="2" height="8" viewBox="0 0 2 8" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.0231 7.71901V0" stroke="#363636" />
-                        </svg>
-                        <div class="_5">5</div>
-                    </div>
-                    <div class="group9">
-                        <svg class="vector25" width="2" height="8" viewBox="0 0 2 8" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.02307 7.71901V0" stroke="#363636" />
-                        </svg>
-                        <div class="_17">17</div>
-                    </div>
-                    <div class="group8">
-                        <svg class="vector26" width="2" height="8" viewBox="0 0 2 8" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.24753 7.71901V0" stroke="#363636" />
-                        </svg>
-                        <div class="_6">6</div>
-                    </div>
-                    <div class="group9">
-                        <svg class="vector27" width="2" height="8" viewBox="0 0 2 8" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.24756 7.71901V0" stroke="#363636" />
-                        </svg>
-                        <div class="_18">18</div>
-                    </div>
-                    <div class="group9">
-                        <svg class="vector28" width="2" height="8" viewBox="0 0 2 8" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.747559 7.71901V0" stroke="#363636" />
-                        </svg>
-                        <div class="_25">25</div>
-                    </div>
-                    <div class="group7">
-                        <svg class="vector29" width="2" height="8" viewBox="0 0 2 8" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.542236 7.71901V0" stroke="#363636" />
-                        </svg>
-                        <div class="_12">12</div>
-                    </div>
-                    <div class="group7">
-                        <svg class="vector30" width="2" height="8" viewBox="0 0 2 8" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.542236 7.71901V0" stroke="#363636" />
-                        </svg>
-                        <div class="_24">24</div>
-                    </div>
-                    <div class="group6">
-                        <svg class="vector31" width="2" height="8" viewBox="0 0 2 8" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.575867 7.71901V0" stroke="#363636" />
-                        </svg>
-                        <div class="_9">9</div>
-                    </div>
-                    <div class="group7">
-                        <svg class="vector32" width="2" height="8" viewBox="0 0 2 8" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.575867 7.71901V0" stroke="#363636" />
-                        </svg>
-                        <div class="_21">21</div>
-                    </div>
-                    <div class="group7">
-                        <svg class="vector33" width="2" height="8" viewBox="0 0 2 8" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.07587 7.71901V0" stroke="#363636" />
-                        </svg>
-                        <div class="_28">28</div>
-                    </div>
-                    <div class="group7">
-                        <svg class="vector34" width="2" height="8" viewBox="0 0 2 8" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.776154 7.71901V0" stroke="#363636" />
-                        </svg>
-                        <div class="_11">11</div>
-                    </div>
-                    <div class="group7">
-                        <svg class="vector35" width="2" height="8" viewBox="0 0 2 8" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.776123 7.71901V0" stroke="#363636" />
-                        </svg>
-                        <div class="_23">23</div>
-                    </div>
-                    <div class="group7">
-                        <svg class="vector36" width="2" height="8" viewBox="0 0 2 8" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.27612 7.71901V0" stroke="#363636" />
-                        </svg>
-                        <div class="_30">30</div>
-                    </div>
-                    <div class="group7">
-                        <svg class="vector37" width="2" height="8" viewBox="0 0 2 8" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.999237 7.71901V0" stroke="#363636" />
-                        </svg>
-                        <div class="_10">10</div>
-                    </div>
-                    <div class="group7">
-                        <svg class="vector38" width="2" height="8" viewBox="0 0 2 8" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.999268 7.71901V0" stroke="#363636" />
-                        </svg>
-                        <div class="_22">22</div>
-                    </div>
-                    <div class="group7">
-                        <svg class="vector39" width="1" height="8" viewBox="0 0 1 8" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.499268 7.71901V0" stroke="#363636" />
-                        </svg>
-                        <div class="_29">29</div>
-                    </div>
-                    <div class="group6">
-                        <svg class="vector40" width="2" height="8" viewBox="0 0 2 8" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.529297 7.71901V0" stroke="#363636" />
-                        </svg>
-                        <div class="_7">7</div>
-                    </div>
-                    <div class="group7">
-                        <svg class="vector41" width="2" height="8" viewBox="0 0 2 8" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.529297 7.71901V0" stroke="#363636" />
-                        </svg>
-                        <div class="_19">19</div>
-                    </div>
-                    <div class="group7">
-                        <svg class="vector42" width="2" height="8" viewBox="0 0 2 8" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.0293 7.71901V0" stroke="#363636" />
-                        </svg>
-                        <div class="_26">26</div>
-                    </div>
-                    <div class="group6">
-                        <svg class="vector43" width="2" height="8" viewBox="0 0 2 8" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.38986 7.71901V0" stroke="#363636" />
-                        </svg>
-                        <div class="_8">8</div>
-                    </div>
-                    <div class="group7">
-                        <svg class="vector44" width="2" height="8" viewBox="0 0 2 8" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.38983 7.71901V0" stroke="#363636" />
-                        </svg>
-                        <div class="_20">20</div>
-                    </div>
-                    <div class="group7">
-                        <svg class="vector45" width="2" height="8" viewBox="0 0 2 8" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.889832 7.71901V0" stroke="#363636" />
-                        </svg>
-                        <div class="_27">27</div>
-                    </div>
-                </div>
-                <div class="graph">
-                    <svg class="group10" width="533" height="207" viewBox="0 0 533 207" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.963654 206.274L533 206.274" stroke="#CCCCCC" />
-                        <path d="M1.50421 154.814H533" stroke="#CCCCCC" />
-                        <path d="M1.50421 103.355H533" stroke="#CCCCCC" />
-                        <path d="M1.50421 51.8916H533" stroke="#CCCCCC" />
-                        <path d="M0.963654 0.433105L533 0.433153" stroke="#CCCCCC" />
-                    </svg>
-                    <svg class="group11" width="533" height="207" viewBox="0 0 533 207" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.302582 0.433105V206.273" stroke="#CCCCCC" />
-                        <path d="M42.037 0.433105V206.273" stroke="#CCCCCC" />
-                        <path d="M106.988 0.433105V206.273" stroke="#CCCCCC" />
-                        <path d="M164.606 0.433105V206.273" stroke="#CCCCCC" />
-                        <path d="M238.146 0.433105V206.273" stroke="#CCCCCC" />
-                        <path d="M303.344 0.433105V206.273" stroke="#CCCCCC" />
-                        <path d="M369.303 0.433105V206.273" stroke="#CCCCCC" />
-                        <path d="M433.743 0.433105V206.273" stroke="#CCCCCC" />
-                        <path d="M498.183 0.433105V206.273" stroke="#CCCCCC" />
-                        <path d="M532.38 0.433105V206.273" stroke="#CCCCCC" />
-                    </svg>
-                    <div class="dates">Dates</div>
-                </div>
-                <div class="side-bar">
-                    <div class="group12">
-                        <div class="group-8343">
-                            <div class="group13">
-                                <svg class="vector61" width="6" height="2" viewBox="0 0 6 2" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.930634 1.27515H5.30042" stroke="#2A547C" />
-                                </svg>
-                                <div class="_200">200</div>
-                            </div>
-                            <div class="group14">
-                                <svg class="vector62" width="6" height="2" viewBox="0 0 6 2" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.933258 0.815918H5.30305" stroke="#2A547C" />
-                                </svg>
-                                <div class="_4002">400</div>
-                            </div>
-                            <div class="group15">
-                                <svg class="vector63" width="6" height="2" viewBox="0 0 6 2" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.930634 1.35669H5.30042" stroke="#2A547C" />
-                                </svg>
-                                <div class="_600">600</div>
-                            </div>
-                            <div class="group16">
-                                <svg class="vector64" width="6" height="2" viewBox="0 0 6 2" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.930634 0.893311H5.30042" stroke="#2A547C" />
-                                </svg>
-                                <div class="_800">800</div>
-                            </div>
-                            <div class="group17">
-                                <svg class="vector65" width="6" height="2" viewBox="0 0 6 2" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.930634 1.43286H5.30042" stroke="#2A547C" />
-                                </svg>
-                                <div class="_1000">1000</div>
-                            </div>
-                            <svg class="vector66" width="2" height="207" viewBox="0 0 2 207" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.30521 0.432861V206.273" stroke="#2A547C" />
-                            </svg>
-                        </div>
-                        <div class="no-of-bookings">No. of bookings</div>
-                    </div>
-                </div>
-                <svg class="hospitalised" width="481" height="139" viewBox="0 0 481 139" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M0.746887 138.159L45.4278 126.193L88.4938 112.898H130.195L174.251 121.741L217.298 113.941L261.296 104.92L333.431 73.4545L366.807 50.4091L401.799 14.5113L451.863 0.772705L480.394 23.8182"
-                        stroke="#E86933" stroke-width="2" />
-                </svg>
-                <svg class="total-number-of-cases" width="479" height="129" viewBox="0 0 479 129" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M0.090332 128.693L43.4477 121.879L87.1377 105.925L129.485 107.565L173.85 98.7013L216.871 104.442H260.226L303.583 88.0406L353.426 60.8409L390.968 12.3294L433.653 0.848633L478.856 49.3182"
-                        stroke="#28537D" stroke-width="2" />
-                </svg>
-            </div>
-            <div class="all-bookings">All bookings</div>
-            <div class="frame-7950">
-                <div class="group-7949">
-                    <div class="rectangle-198"></div>
-                    <div class="line-42"></div>
-                    <div class="ev-bookings">EV bookings</div>
-                </div>
-                <div class="group-7948">
-                    <div class="rectangle-1982"></div>
-                    <svg class="line-422" width="19" height="2" viewBox="0 0 19 2" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.5 1H18.5" stroke="#D87042" stroke-width="2" />
-                    </svg>
-                    <div class="battery-bookings">Battery bookings</div>
-                </div>
-            </div>
-            <div class="line-43"></div>
-        </div>
-        <div class="frame-8712">
-            <div class="line-432"></div>
-            <div class="booking-statistics">Booking statistics</div>
-            <div class="frame-8204">
-                <svg class="graph2" width="515" height="285" viewBox="0 0 515 285" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.253906 284.059L514.661 284.059" stroke="#363636" />
-                    <path d="M0.661621 173.494H514.546" stroke="#E8E7E7" stroke-opacity="0.933333" />
-                    <path d="M0.661621 231.494H514.546" stroke="#E8E7E7" stroke-opacity="0.933333" />
-                    <path d="M0.661621 114.494H514.546" stroke="#E8E7E7" stroke-opacity="0.933333" />
-                    <path d="M0.777145 81.771H514.662" stroke="#CCCCCC" />
-                    <path d="M0.661621 55.4941H514.546" stroke="#E8E7E7" stroke-opacity="0.933333" />
-                    <path d="M0.253906 0L514.661 4.49709e-05" stroke="#E8E7E7" stroke-opacity="0.933333" />
-                </svg>
-                <div class="precipitation-marks">
-                    <div class="side-bar2">
-                        <svg class="vector74" width="2" height="284" viewBox="0 0 2 284" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 0L1.00001 284" stroke="#363636" />
-                        </svg>
-                        <div class="group20">
-                            <div class="group21">
-                                <svg class="vector75" width="6" height="2" viewBox="0 0 6 2" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.450226 1.03589H5.65623" stroke="#363636" />
-                                </svg>
-                                <div class="battery-booking">Battery booking</div>
-                            </div>
-                            <div class="group22">
-                                <svg class="vector76" width="6" height="2" viewBox="0 0 6 2" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.453018 1.48193H5.65902" stroke="#363636" />
-                                </svg>
-                                <div class="total-battery">Total battery</div>
-                            </div>
-                            <div class="group23">
-                                <svg class="vector77" width="6" height="2" viewBox="0 0 6 2" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.451599 0.927734H5.6576" stroke="#363636" />
-                                </svg>
-                                <div class="rejected-booking">Rejected booking</div>
-                            </div>
-                            <div class="group24">
-                                <svg class="vector78" width="6" height="2" viewBox="0 0 6 2" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.45015 1.37378H5.65615" stroke="#363636" />
-                                </svg>
-                                <div class="non-active-booking">Non-active booking</div>
-                            </div>
-                            <div class="group25">
-                                <svg class="vector79" width="6" height="2" viewBox="0 0 6 2" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.451569 0.819336H5.65757" stroke="#363636" />
-                                </svg>
-                                <div class="active-booking">Active booking</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="horizontal-bar">
-                    <div class="group26">
-                        <svg class="vector80" width="2" height="11" viewBox="0 0 2 11" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.892746 10.5499V0.759277" stroke="#363636" />
-                        </svg>
-                        <div class="_0">0</div>
-                    </div>
-                    <div class="group27">
-                        <svg class="vector81" width="1" height="11" viewBox="0 0 1 11" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.508949 10.5499V0.759277" stroke="#363636" />
-                        </svg>
-                        <div class="_2002">200</div>
-                    </div>
-                    <div class="group28">
-                        <svg class="vector82" width="2" height="11" viewBox="0 0 2 11" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.62606 10.5499V0.759277" stroke="#363636" />
-                        </svg>
-                        <div class="_4003">400</div>
-                    </div>
-                    <div class="group29">
-                        <svg class="vector83" width="1" height="11" viewBox="0 0 1 11" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.504211 10.5499V0.759277" stroke="#363636" />
-                        </svg>
-                        <div class="_8002">800</div>
-                    </div>
-                    <div class="group30">
-                        <svg class="vector84" width="2" height="11" viewBox="0 0 2 11" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.21275 10.5499V0.759277" stroke="#363636" />
-                        </svg>
-                        <div class="_6002">600</div>
-                    </div>
-                </div>
-                <div class="group-8424">
-                    <div class="rectangle-1401"></div>
-                    <div class="rectangle-1402"></div>
-                    <div class="rectangle-1403"></div>
-                    <div class="rectangle-1404"></div>
-                    <div class="rectangle-1405"></div>
-                </div>
-            </div>
-        </div>
-        <div class="frame-8713">
-            <div class="group-8427">
-                <div class="ellipse-2"></div>
-                <div class="ellipse-6"></div>
-                <div class="ellipse-7"></div>
-                <div class="ellipse-8"></div>
-                <div class="ellipse-9"></div>
-                <div class="ellipse-10"></div>
-            </div>
-            <div class="frame-87142">
-                <div class="total-revenue">Total revenue</div>
-                <div class="_76-100">
-                    <span>
-                        <span class="_76-100-span3">₹</span>
-                        <span class="_76-100-span4">76,100</span>
-                    </span>
-                </div>
-            </div>
-            <div class="line-433"></div>
-            <div class="revenue">Revenue</div>
-            <div class="frame-8730">
-                <div class="frame-8728">
-                    <div class="ellipse-11"></div>
-                    <div class="madhapur-hub">Madhapur hub</div>
-                </div>
-                <div class="frame-8729">
-                    <div class="ellipse-112"></div>
-                    <div class="ameerpet-hub">Ameerpet hub</div>
-                </div>
-                <div class="frame-87302">
-                    <div class="ellipse-113"></div>
-                    <div class="nagole-hub">Nagole hub</div>
-                </div>
-                <div class="frame-8731">
-                    <div class="ellipse-114"></div>
-                    <div class="ecil-hub">ECIL hub</div>
-                </div>
-                <div class="frame-8732">
-                    <div class="ellipse-115"></div>
-                    <div class="aramghar-hub">Aramghar hub</div>
-                </div>
-                <div class="frame-8733">
-                    <div class="ellipse-116"></div>
-                    <div class="miyapur-hub">Miyapur hub</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<div class="dashboard-container" fxLayout="column" fxLayoutAlign="start stretch">
 
-</div> -->
-
-<div class="grid-container">
-    <mat-toolbar style="background: none;"> 
-        <h1 class="mat-h1">Dashboard</h1>
-        <span class="example-spacer"></span>
-        <button mat-raised-button color="primary" style="border-radius: 24px;">Generate Report</button>
+    <mat-toolbar style="background: none;">
+      <h1 class="mat-h1">Dashboard</h1>
+      <span class="example-spacer"></span>
+      <button mat-raised-button color="primary" style="border-radius: 24px;">Generate Report</button>
     </mat-toolbar>
- 
-    <mat-grid-list cols="4" rowHeight="240px">
-      @for (card of cards | async; track card) {
-        <mat-grid-tile [colspan]="card.cols" [rowspan]="card.rows" >
-          <mat-card class="dashboard-card" [style.background]="card.color">
-           
-            <mat-card-header>
-           <div style="display: flex;align-items: flex-start;justify-content: flex-start;"> 
-            <mat-icon >{{card.icon}}</mat-icon>
-           </div>
-               
-             
-               
-                <span class="example-spacer"></span>
-                <div class="frame-8717">
-                    <div
-                        class="streamline-money-graph-arrow-increase-ascend-growth-up-arrow-stats-graph-right-grow">
-                        <svg class="group2" width="16" height="9" viewBox="0 0 16 9" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10.8571 0.5H15.4286V5.07143" stroke="#19744C" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path
-                                d="M15.4286 0.5L8.97143 6.95714C8.86461 7.06184 8.721 7.12049 8.57143 7.12049C8.42185 7.12049 8.27824 7.06184 8.17143 6.95714L5.54286 4.32857C5.43604 4.22387 5.29243 4.16522 5.14286 4.16522C4.99328 4.16522 4.84967 4.22387 4.74286 4.32857L0.571426 8.5"
-                                stroke="#19744C" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <div class="_20-9">20.9%</div>
-
-                </div>
-                <!-- <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
-                  <mat-icon>more_vert</mat-icon>
-                </button>
-                <mat-menu #menu="matMenu" xPosition="before">
-                  <button mat-menu-item>Expand</button>
-                  <button mat-menu-item>Remove</button>
-                </mat-menu> -->
-             
-             
-             
-            </mat-card-header>
-          
-            <mat-card-content class="dashboard-card-content">
-                <div style="font-size: 24px;"> {{card.title}}</div> 
-              <div>{{card.content}}</div>
-            </mat-card-content>
-    
-          </mat-card>
-        </mat-grid-tile>
-      }
-    </mat-grid-list>
-  </div>
-
-
-  <div class="frame-8725">
-    <div class="frame-8724">
-      <div class="frame-2608320">
-        <div class="revenue">Revenue</div>
-        <div class="frame-2608324">
-          <div class="frame-8073">
-            <div class="generate-report">Generate report</div>
-          </div>
-        </div>
-      </div>
-      <div class="mh">
-        <div class="group-8427">
-          <div class="ellipse-2"></div>
-          <div class="ellipse-6"></div>
-          <div class="ellipse-7"></div>
-          <div class="ellipse-8"></div>
-          <div class="ellipse-9"></div>
-          <div class="ellipse-10"></div>
-        </div>
-        <div class="frame-8714">
-          <div class="total-revenue">Total revenue</div>
-          <div class="_76-100">
-            <span>
-              <span class="_76-100-span">₹</span>
-              <span class="_76-100-span2">76,100</span>
-            </span>
-          </div>
-        </div>
-        <div class="frame-8730">
-          <div class="frame-8728">
-            <div class="ellipse-11"></div>
-            <div class="madhapur-hub-18-000">
-              <span>
-                <span class="madhapur-hub-18-000-span">Madhapur hub -</span>
-                <span class="madhapur-hub-18-000-span2">₹18,000</span>
-              </span>
-            </div>
-          </div>
-          <div class="frame-8729">
-            <div class="ellipse-112"></div>
-            <div class="ameerpet-hub-17-500">
-              <span>
-                <span class="ameerpet-hub-17-500-span">Ameerpet hub -</span>
-                <span class="ameerpet-hub-17-500-span2">₹17,500</span>
-              </span>
-            </div>
-          </div>
-          <div class="frame-87302">
-            <div class="ellipse-113"></div>
-            <div class="nagole-hub-15-000">
-              <span>
-                <span class="nagole-hub-15-000-span">Nagole hub -</span>
-                <span class="nagole-hub-15-000-span2">₹15,000</span>
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="frame-8731">
-          <div class="frame-87312">
-            <div class="ellipse-114"></div>
-            <div class="ecil-hub-12-100">
-              <span>
-                <span class="ecil-hub-12-100-span">ECIL hub -</span>
-                <span class="ecil-hub-12-100-span2">₹12,100</span>
-              </span>
-            </div>
-          </div>
-          <div class="frame-8732">
-            <div class="ellipse-115"></div>
-            <div class="aramghar-hub-7-500">
-              <span>
-                <span class="aramghar-hub-7-500-span">Aramghar hub -</span>
-                <span class="aramghar-hub-7-500-span2">₹7,500</span>
-              </span>
-            </div>
-          </div>
-          <div class="frame-8733">
-            <div class="ellipse-116"></div>
-            <div class="miyapur-hub-6-000">
-              <span>
-                <span class="miyapur-hub-6-000-span">Miyapur hub -</span>
-                <span class="miyapur-hub-6-000-span2">₹6,000</span>
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="frame-2608341">
-          <div class="revenue-by-location">Revenue by location</div>
-          <div class="frame-2608166">
-            <div class="text-holder">
-              <div class="hub-centre">Hub centre</div>
-              <svg
-                class="iconamoon-search-fill"
-                width="17"
-                height="17"
-                viewBox="0 0 17 17"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M7.93331 1.8335C6.9749 1.8336 6.03045 2.0633 5.17903 2.50336C4.32762 2.94342 3.59401 3.58104 3.03962 4.36284C2.48523 5.14465 2.1262 6.04788 1.99257 6.99694C1.85894 7.94599 1.95461 8.91325 2.27156 9.81774C2.58852 10.7222 3.11753 11.5376 3.81433 12.1957C4.51113 12.8537 5.35543 13.3353 6.27656 13.6C7.19768 13.8648 8.16883 13.905 9.10869 13.7174C10.0486 13.5297 10.9298 13.1197 11.6786 12.5215L14.1286 14.9715C14.2544 15.0929 14.4228 15.1601 14.5976 15.1586C14.7724 15.1571 14.9396 15.087 15.0632 14.9634C15.1868 14.8398 15.2569 14.6726 15.2584 14.4978C15.2599 14.323 15.1928 14.1546 15.0713 14.0288L12.6213 11.5788C13.3266 10.6961 13.7684 9.63209 13.8956 8.50935C14.0229 7.3866 13.8306 6.25074 13.3408 5.23249C12.8509 4.21425 12.0835 3.35502 11.1269 2.75369C10.1702 2.15237 9.06325 1.8334 7.93331 1.8335ZM3.93331 7.8335C3.93331 7.30821 4.03677 6.78806 4.23779 6.30276C4.43881 5.81746 4.73345 5.3765 5.10488 5.00507C5.47632 4.63363 5.91728 4.339 6.40258 4.13798C6.88788 3.93696 7.40802 3.8335 7.93331 3.8335C8.4586 3.8335 8.97874 3.93696 9.46405 4.13798C9.94935 4.339 10.3903 4.63363 10.7617 5.00507C11.1332 5.3765 11.4278 5.81746 11.6288 6.30276C11.8298 6.78806 11.9333 7.30821 11.9333 7.8335C11.9333 8.89436 11.5119 9.91178 10.7617 10.6619C10.0116 11.4121 8.99418 11.8335 7.93331 11.8335C6.87245 11.8335 5.85503 11.4121 5.10488 10.6619C4.35474 9.91178 3.93331 8.89436 3.93331 7.8335Z"
-                  fill="#3355B9"
-                />
-              </svg>
-            </div>
-            <div class="text-holder">
-              <div class="this-month">This month</div>
-              <svg
-                class="ep-arrow-down-bold"
-                width="16"
-                height="17"
-                viewBox="0 0 16 17"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.63599 5.79279C1.82351 5.60532 2.07782 5.5 2.34299 5.5C2.60815 5.5 2.86246 5.60532 3.04999 5.79279L7.99999 10.7428L12.95 5.79279C13.1386 5.61063 13.3912 5.50983 13.6534 5.51211C13.9156 5.51439 14.1664 5.61956 14.3518 5.80497C14.5372 5.99038 14.6424 6.24119 14.6447 6.50339C14.6469 6.76558 14.5461 7.01818 14.364 7.20679L8.70699 12.8638C8.51946 13.0513 8.26515 13.1566 7.99999 13.1566C7.73482 13.1566 7.48052 13.0513 7.29299 12.8638L1.63599 7.20679C1.44852 7.01926 1.3432 6.76495 1.3432 6.49979C1.3432 6.23462 1.44852 5.98031 1.63599 5.79279Z"
-                  fill="#3355B9"
-                />
-              </svg>
-            </div>
-          </div>
-        </div>
-        <div class="line-43"></div>
-      </div>
-      
-    </div>
-  </div>
   
+    <div class="cards-container" fxLayout="row" fxLayoutWrap fxLayoutAlign="space-between start">
+      
+      <mat-card class="dashboard-card" style="background: #E0F7FA;" fxFlex="24%" fxFlex.xs="100%" style="margin: 10px;">
+        <mat-card-header>
+          <div style="display: flex; align-items: flex-start;">
+            <mat-icon>attach_money</mat-icon>
+            <span class="example-spacer"></span>
+            <div class="frame-8717">
+              <div class="streamline-money-graph-arrow-increase-ascend-growth-up-arrow-stats-graph-right-grow">
+                <svg class="group2" width="16" height="9" viewBox="0 0 16 9" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.8571 0.5H15.4286V5.07143" stroke="#19744C" stroke-linecap="round"
+                        stroke-linejoin="round"/>
+                  <path d="M15.4286 0.5L8.97143 6.95714C8.86461 7.06184 8.721 7.12049 8.57143 7.12049C8.42185 7.12049 8.27824 7.06184 8.17143 6.95714L5.54286 4.32857C5.43604 4.22387 5.29243 4.16522 5.14286 4.16522C4.99328 4.16522 4.84967 4.22387 4.74286 4.32857L0.571426 8.5"
+                        stroke="#19744C" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="_20-9">20.9%</div>
+            </div>
+          </div>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <div style="font-size: 24px;">Total Revenue</div>
+          <div class="total">₹ 76,100</div>
+        </mat-card-content>
+      </mat-card>
+  
+      <mat-card class="dashboard-card" style="background: #FFEBEE;" fxFlex="24%" fxFlex.xs="100%" style="margin: 10px;">
+        <mat-card-header>
+          <div style="display: flex; align-items: flex-start;">
+            <mat-icon>person</mat-icon>
+            <span class="example-spacer"></span>
+            <div class="frame-8717">
+              <div class="streamline-money-graph-arrow-increase-ascend-growth-up-arrow-stats-graph-right-grow">
+                <svg class="group2" width="16" height="9" viewBox="0 0 16 9" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.8571 0.5H15.4286V5.07143" stroke="#19744C" stroke-linecap="round"
+                        stroke-linejoin="round"/>
+                  <path d="M15.4286 0.5L8.97143 6.95714C8.86461 7.06184 8.721 7.12049 8.57143 7.12049C8.42185 7.12049 8.27824 7.06184 8.17143 6.95714L5.54286 4.32857C5.43604 4.22387 5.29243 4.16522 5.14286 4.16522C4.99328 4.16522 4.84967 4.22387 4.74286 4.32857L0.571426 8.5"
+                        stroke="#19744C" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="_20-9">15.4%</div>
+            </div>
+          </div>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <div style="font-size: 24px;">Total Users</div>
+          <div class="total">1,250</div>
+        </mat-card-content>
+      </mat-card>
+  
+      <mat-card class="dashboard-card" style="background: #E8F5E9;" fxFlex="24%" fxFlex.xs="100%" style="margin: 10px;">
+        <mat-card-header>
+          <div style="display: flex; align-items: flex-start;">
+            <mat-icon>star</mat-icon>
+            <span class="example-spacer"></span>
+            <div class="frame-8717">
+              <div class="streamline-money-graph-arrow-increase-ascend-growth-up-arrow-stats-graph-right-grow">
+                <svg class="group2" width="16" height="9" viewBox="0 0 16 9" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.8571 0.5H15.4286V5.07143" stroke="#19744C" stroke-linecap="round"
+                        stroke-linejoin="round"/>
+                  <path d="M15.4286 0.5L8.97143 6.95714C8.86461 7.06184 8.721 7.12049 8.57143 7.12049C8.42185 7.12049 8.27824 7.06184 8.17143 6.95714L5.54286 4.32857C5.43604 4.22387 5.29243 4.16522 5.14286 4.16522C4.99328 4.16522 4.84967 4.22387 4.74286 4.32857L0.571426 8.5"
+                        stroke="#19744C" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="_20-9">30.1%</div>
+            </div>
+          </div>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <div style="font-size: 24px;">Average Rating</div>
+          <div class="total">4.5</div>
+        </mat-card-content>
+      </mat-card>
+  
+      <mat-card class="dashboard-card" style="background: #FFF8E1;" fxFlex="24%" fxFlex.xs="100%" style="margin: 10px;">
+        <mat-card-header>
+          <div style="display: flex; align-items: flex-start;">
+            <mat-icon>info</mat-icon>
+            <span class="example-spacer"></span>
+            <div class="frame-8717">
+              <div class="streamline-money-graph-arrow-increase-ascend-growth-up-arrow-stats-graph-right-grow">
+                <svg class="group2" width="16" height="9" viewBox="0 0 16 9" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.8571 0.5H15.4286V5.07143" stroke="#19744C" stroke-linecap="round"
+                        stroke-linejoin="round"/>
+                  <path d="M15.4286 0.5L8.97143 6.95714C8.86461 7.06184 8.721 7.12049 8.57143 7.12049C8.42185 7.12049 8.27824 7.06184 8.17143 6.95714L5.54286 4.32857C5.43604 4.22387 5.29243 4.16522 5.14286 4.16522C4.99328 4.16522 4.84967 4.22387 4.74286 4.32857L0.571426 8.5"
+                        stroke="#19744C" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="_20-9">5.6%</div>
+            </div>
+          </div>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <div style="font-size: 24px;">New Issues</div>
+          <div class="total">56</div>
+        </mat-card-content>
+      </mat-card>
+  
+    </div>
+    <div class="cards-container">
+    <mat-card class="dashboard-card1" style="background: #E8F5E9;" fxFlex="24%" fxFlex.xs="100%" style="margin: 10px;">
+      <mat-card>
+        <canvas baseChart
+        [datasets]="lineChartData"
+        [labels]="lineChartLabels"
+        [options]="lineChartOptions"
+        [legend]="lineChartLegend"
+        [type]="'bar'">
+      </canvas>
+      </mat-card>
+    </mat-card>
+  
+
+  
+  <mat-card class="dashboard-card1">
+  <canvas baseChart
+          [datasets]="[{ data: pieChartData }] "  
+          [labels]="pieChartLabels"
+          [options]="pieChartOptions"
+          [legend]="pieChartLegend"
+    
+          [type]="'pie'">
+  </canvas>
+</mat-card>
+</div>

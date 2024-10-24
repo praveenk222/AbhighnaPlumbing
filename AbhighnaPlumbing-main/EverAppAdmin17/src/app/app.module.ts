@@ -13,7 +13,7 @@ import { DialogModule } from 'primeng/dialog';
 import { NgChartsModule } from 'ng2-charts';
 
 import { ReactiveFormsModule} from '@angular/forms';
-
+import { BaseChartDirective} from 'ng2-charts'
 
 
 
@@ -100,15 +100,19 @@ import { SuccessInterceptor } from './services/toastersuccess.interceptor';
     CdkTableModule,
     CdkTreeModule,
     DragDropModule,
-    MaterialModule
+    MaterialModule,
+   
+    NgChartsModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: spinnerInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: SuccessInterceptor, multi: true },
     provideHttpClient(),
-   
+ 
   ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+

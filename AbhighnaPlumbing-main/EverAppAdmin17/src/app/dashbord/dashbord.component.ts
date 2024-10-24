@@ -128,5 +128,27 @@ getdasboarData(){
     }
   })
 }
- 
+public lineChartData = [
+  { data: [10, 15, 25, 30, 20, 35], label: 'Deliveries' }
+];
+public lineChartLabels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'];
+public lineChartOptions = {
+  responsive: true
+};
+public lineChartLegend = true;
+public lineChartType = 'line';
+public pieChartLabels: string[] = ['Label 1', 'Label 2', 'Label 3'];
+public pieChartData: number[] = [300, 500, 200];
+public pieChartOptions: any = {
+  responsive: true,
+};
+public pieChartLegend: boolean = true;
+public pieChartType: string = 'pie';
+
+// Optionally, you can add colors
+public pieChartColors: Array<any> = [
+  {
+    backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
+  },
+];
 }
