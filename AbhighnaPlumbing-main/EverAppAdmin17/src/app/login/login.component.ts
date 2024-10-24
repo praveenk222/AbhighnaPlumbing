@@ -13,8 +13,8 @@ export class LoginComponent {
 
   constructor(private fb: FormBuilder,private router:Router,private users:UsersService) {
     this.loginForm = this.fb.group({
-      UserName: ['', ],
-      Password: ['', [Validators.required]]
+      UserName: ['admin', ],
+      Password: ['admin', [Validators.required]]
     });
   }
 
@@ -27,7 +27,7 @@ export class LoginComponent {
           console.log(res)
           if(res){
             alert(res[0].Message)
-            this.router.navigate(['/getProduct'])
+            this.router.navigate(['/dashboard'])
           }
         }
       )

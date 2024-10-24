@@ -4,7 +4,30 @@ const sql = require('mssql');
 async function getAllorders(req, res) {
     try {
         let pool=await sql.connect();
-        const result = await pool.request().execute('[dbo].[GetAllOrdersWithDetails]');
+        const result = await pool.request().execute('[dbo].[GetAllOrders]');
+        console.log(result)
+
+        if (result.recordset && result.recordset.length > 0) {
+            // return res.status(200).json(result.recordset);
+            return res.status(200).json(result.recordset);
+            //result will give all  about table with data
+            // res.send(result.rows);  // Send the fetched orders
+        } else {
+            return res.status(500).json({ message: 'Error fetching orders' });   // Handle no data found
+        }
+    } catch (error) {
+        console.error('Error fetching orders:', error.message);
+        return res.status(500).json({ message: 'Error fetching orders' }); // Improved error handling
+    }
+}
+async function getAllorderDetails(req, res) {
+    try {
+        let pool=await sql.connect();
+        const { ID } = req.params;
+        console.log(ID)
+        const result = await pool.request()  
+            .input('OrderID', sql.Int, ID)
+            .execute('[dbo].[GetOrderWithDetails]');
         console.log(result)
 
         if (result.recordset && result.recordset.length > 0) {
@@ -85,7 +108,7 @@ async function getAllorders(req, res) {
 //this is the sample ex of sp calling using select statment (imp)
 module.exports = {
     getAllUser: getAllorders,
-    // getById:getCardsById,
+    getById:getAllorderDetails,
     createorder:createorder
  
 }

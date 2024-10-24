@@ -8,7 +8,7 @@ const orderService = require('./order.service');
 // routes
 
 router.get('/', orderService.getAllUser);
-// router.get('/:id', getById);
+router.get('/:ID', orderService.getById);
 router.post('/', orderService.createorder);
 
 module.exports = router;

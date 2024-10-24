@@ -1,0 +1,2410 @@
+/* .frame-8725,
+.frame-8725 * {
+  box-sizing: border-box;
+}
+.frame-8725 {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 1178px;
+  height: 942px;
+  position: relative;
+}
+.parent{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+.frame-8724 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-2608320 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 1146px;
+  position: relative;
+}
+.frame-2608414 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.dashboard {
+  color: #363636;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: relative;
+}
+.filter {
+  background: #ffffff;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #e2e1e5;
+  border-width: 1px;
+  padding: 9px 12px 9px 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 176px;
+  position: relative;
+  overflow: hidden;
+}
+.frame-2608377 {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.uis-calender {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  overflow: visible;
+}
+.name {
+  color: var(--text-color, #363636);
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+}
+.ri-arrow-right-s-line {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  transform: translate(0px, 0px);
+  overflow: visible;
+}
+.frame-2608333 {
+  background: var(--primary, #3355b9);
+  border-radius: 24px;
+  padding: 16px 20px 16px 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 42px;
+  position: relative;
+}
+.generate-report {
+  color: #ffffff;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+}
+.frame-8726 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  width: 496px;
+  position: relative;
+}
+.frame-8705 {
+  background: #92e3a9;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 238px;
+  height: 180px;
+  position: relative;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+}
+.frame-8718 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.mingcute-wheel-fill {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  position: relative;
+  overflow: hidden;
+}
+.group {
+  height: auto;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+  overflow: visible;
+}
+.frame-8717 {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 8px 10px 8px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.streamline-money-graph-arrow-increase-ascend-growth-up-arrow-stats-graph-right-grow {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: hidden;
+}
+.group2 {
+  height: auto;
+  position: absolute;
+  right: 3.57%;
+  left: 3.57%;
+  width: 92.86%;
+  bottom: 25%;
+  top: 25%;
+  height: 50%;
+  overflow: visible;
+}
+._20-9 {
+  color: #19744c;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-8714 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.total-vehicles {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+._3-500 {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-87172 {
+  background: #a7dbff;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 238px;
+  height: 180px;
+  position: relative;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+}
+.material-symbols-deployed-code-history-rounded {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  position: relative;
+  overflow: visible;
+}
+.group3 {
+  height: auto;
+  position: absolute;
+  right: 3.57%;
+  left: 3.57%;
+  width: 92.86%;
+  bottom: 25%;
+  top: 25%;
+  height: 50%;
+  overflow: visible;
+}
+._16-08 {
+  color: #19744c;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.total-bookings {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+._1-000 {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-87182 {
+  background: #ffbf9d;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 238px;
+  height: 180px;
+  position: relative;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+}
+.fluent-phone-update-checkmark-20-filled {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  position: relative;
+  overflow: visible;
+}
+.streamline-money-graph-arrow-decrease-down-stats-graph-descend-right-arrow {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: hidden;
+}
+.group4 {
+  height: auto;
+  position: absolute;
+  right: 3.57%;
+  left: 3.57%;
+  width: 92.86%;
+  bottom: 25%;
+  top: 25%;
+  height: 50%;
+  overflow: visible;
+}
+._9-00 {
+  color: #e34731;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.available {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+._400 {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-8719 {
+  background: #eed38f;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 238px;
+  height: 180px;
+  position: relative;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+}
+.material-symbols-deployed-code-history-rounded2 {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  position: relative;
+  overflow: visible;
+}
+.group5 {
+  height: auto;
+  position: absolute;
+  right: 3.57%;
+  left: 3.57%;
+  width: 92.86%;
+  bottom: 25%;
+  top: 25%;
+  height: 50%;
+  overflow: visible;
+}
+._20-08 {
+  color: #19744c;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.total-revenue {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+._76-100 {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+._76-100-span {
+  color: #000000;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: lowercase;
+}
+._76-100-span2 {
+  color: #000000;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+}
+.frame-8709 {
+  background: #ffffff;
+  border-radius: 18px;
+  flex-shrink: 0;
+  width: 630px;
+  height: 380px;
+  position: relative;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+.chart {
+  width: 604px;
+  height: 256px;
+  position: absolute;
+  left: 12px;
+  top: 72px;
+  overflow: hidden;
+}
+.horizontal-bar {
+  position: absolute;
+  inset: 0;
+}
+.group6 {
+  width: 7px;
+  height: 23.72px;
+  position: static;
+}
+.vector16 {
+  height: auto;
+  position: absolute;
+  right: 90.24%;
+  left: 9.76%;
+  width: 0%;
+  bottom: 14.17%;
+  top: 82.81%;
+  height: 3.02%;
+  overflow: visible;
+}
+._1 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 89.76%;
+  left: 9.08%;
+  width: 1.16%;
+  bottom: 7.92%;
+  top: 85.83%;
+  height: 6.25%;
+}
+.group7 {
+  width: 14px;
+  height: 23.72px;
+  position: static;
+}
+.vector17 {
+  height: auto;
+  position: absolute;
+  right: 59.44%;
+  left: 40.56%;
+  width: 0%;
+  bottom: 14.17%;
+  top: 82.81%;
+  height: 3.02%;
+  overflow: visible;
+}
+._13 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 58.47%;
+  left: 39.21%;
+  width: 2.32%;
+  bottom: 7.92%;
+  top: 85.83%;
+  height: 6.25%;
+}
+.vector18 {
+  height: auto;
+  position: absolute;
+  right: 88.17%;
+  left: 11.83%;
+  width: 0%;
+  bottom: 14.17%;
+  top: 82.81%;
+  height: 3.02%;
+  overflow: visible;
+}
+._2 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 87.53%;
+  left: 11.31%;
+  width: 1.16%;
+  bottom: 7.92%;
+  top: 85.83%;
+  height: 6.25%;
+}
+.vector19 {
+  height: auto;
+  position: absolute;
+  right: 56.38%;
+  left: 43.62%;
+  width: 0%;
+  bottom: 14.17%;
+  top: 82.81%;
+  height: 3.02%;
+  overflow: visible;
+}
+._14 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 55.24%;
+  left: 42.44%;
+  width: 2.32%;
+  bottom: 7.92%;
+  top: 85.83%;
+  height: 6.25%;
+}
+.vector20 {
+  height: auto;
+  position: absolute;
+  right: 85.86%;
+  left: 14.14%;
+  width: 0%;
+  bottom: 14.17%;
+  top: 82.81%;
+  height: 3.02%;
+  overflow: visible;
+}
+._3 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 85.29%;
+  left: 13.55%;
+  width: 1.16%;
+  bottom: 7.92%;
+  top: 85.83%;
+  height: 6.25%;
+}
+.vector21 {
+  height: auto;
+  position: absolute;
+  right: 52.91%;
+  left: 47.09%;
+  width: 0%;
+  bottom: 14.17%;
+  top: 82.81%;
+  height: 3.02%;
+  overflow: visible;
+}
+._15 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 51.85%;
+  left: 45.83%;
+  width: 2.32%;
+  bottom: 7.92%;
+  top: 85.83%;
+  height: 6.25%;
+}
+.vector22 {
+  height: auto;
+  position: absolute;
+  right: 83.64%;
+  left: 16.36%;
+  width: 0%;
+  bottom: 14.17%;
+  top: 82.81%;
+  height: 3.02%;
+  overflow: visible;
+}
+._4 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 83.06%;
+  left: 15.78%;
+  width: 1.16%;
+  bottom: 7.92%;
+  top: 85.83%;
+  height: 6.25%;
+}
+.vector23 {
+  height: auto;
+  position: absolute;
+  right: 49.53%;
+  left: 50.47%;
+  width: 0%;
+  bottom: 14.17%;
+  top: 82.81%;
+  height: 3.02%;
+  overflow: visible;
+}
+._16 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 48.46%;
+  left: 49.23%;
+  width: 2.32%;
+  bottom: 7.92%;
+  top: 85.83%;
+  height: 6.25%;
+}
+.group8 {
+  width: 7px;
+  height: 23.74px;
+  position: static;
+}
+.vector24 {
+  height: auto;
+  position: absolute;
+  right: 81.45%;
+  left: 18.55%;
+  width: 0%;
+  bottom: 14.17%;
+  top: 82.81%;
+  height: 3.02%;
+  overflow: visible;
+}
+._5 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 80.82%;
+  left: 18.02%;
+  width: 1.16%;
+  bottom: 7.91%;
+  top: 85.84%;
+  height: 6.25%;
+}
+.group9 {
+  width: 14px;
+  height: 23.74px;
+  position: static;
+}
+.vector25 {
+  height: auto;
+  position: absolute;
+  right: 46.35%;
+  left: 53.65%;
+  width: 0%;
+  bottom: 14.17%;
+  top: 82.81%;
+  height: 3.02%;
+  overflow: visible;
+}
+._17 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 45.23%;
+  left: 52.45%;
+  width: 2.32%;
+  bottom: 7.91%;
+  top: 85.84%;
+  height: 6.25%;
+}
+.vector26 {
+  height: auto;
+  position: absolute;
+  right: 79.1%;
+  left: 20.9%;
+  width: 0%;
+  bottom: 14.17%;
+  top: 82.81%;
+  height: 3.02%;
+  overflow: visible;
+}
+._6 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 78.59%;
+  left: 20.25%;
+  width: 1.16%;
+  bottom: 7.91%;
+  top: 85.84%;
+  height: 6.25%;
+}
+.vector27 {
+  height: auto;
+  position: absolute;
+  right: 42.84%;
+  left: 57.16%;
+  width: 0%;
+  bottom: 14.17%;
+  top: 82.81%;
+  height: 3.02%;
+  overflow: visible;
+}
+._18 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 41.83%;
+  left: 55.85%;
+  width: 2.32%;
+  bottom: 7.91%;
+  top: 85.84%;
+  height: 6.25%;
+}
+.vector28 {
+  height: auto;
+  position: absolute;
+  right: 19.08%;
+  left: 80.92%;
+  width: 0%;
+  bottom: 14.17%;
+  top: 82.81%;
+  height: 3.02%;
+  overflow: visible;
+}
+._25 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 18.07%;
+  left: 79.61%;
+  width: 2.32%;
+  bottom: 7.91%;
+  top: 85.84%;
+  height: 6.25%;
+}
+.vector29 {
+  height: auto;
+  position: absolute;
+  right: 62.99%;
+  left: 37.01%;
+  width: 0%;
+  bottom: 14.17%;
+  top: 82.81%;
+  height: 3.02%;
+  overflow: visible;
+}
+._12 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 61.87%;
+  left: 35.82%;
+  width: 2.32%;
+  bottom: 7.92%;
+  top: 85.83%;
+  height: 6.25%;
+}
+.vector30 {
+  height: auto;
+  position: absolute;
+  right: 22.59%;
+  left: 77.41%;
+  width: 0%;
+  bottom: 14.17%;
+  top: 82.81%;
+  height: 3.02%;
+  overflow: visible;
+}
+._24 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 21.47%;
+  left: 76.21%;
+  width: 2.32%;
+  bottom: 7.92%;
+  top: 85.83%;
+  height: 6.25%;
+}
+.vector31 {
+  height: auto;
+  position: absolute;
+  right: 72.42%;
+  left: 27.58%;
+  width: 0%;
+  bottom: 14.17%;
+  top: 82.81%;
+  height: 3.02%;
+  overflow: visible;
+}
+._9 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 71.88%;
+  left: 26.96%;
+  width: 1.16%;
+  bottom: 7.92%;
+  top: 85.83%;
+  height: 6.25%;
+}
+.vector32 {
+  height: auto;
+  position: absolute;
+  right: 32.69%;
+  left: 67.31%;
+  width: 0%;
+  bottom: 14.17%;
+  top: 82.81%;
+  height: 3.02%;
+  overflow: visible;
+}
+._21 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 31.65%;
+  left: 66.03%;
+  width: 2.32%;
+  bottom: 7.92%;
+  top: 85.83%;
+  height: 6.25%;
+}
+.vector33 {
+  height: auto;
+  position: absolute;
+  right: 8.93%;
+  left: 91.07%;
+  width: 0%;
+  bottom: 14.17%;
+  top: 82.81%;
+  height: 3.02%;
+  overflow: visible;
+}
+._28 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 7.89%;
+  left: 89.79%;
+  width: 2.32%;
+  bottom: 7.92%;
+  top: 85.83%;
+  height: 6.25%;
+}
+.vector34 {
+  height: auto;
+  position: absolute;
+  right: 66.43%;
+  left: 33.57%;
+  width: 0%;
+  bottom: 14.17%;
+  top: 82.81%;
+  height: 3.02%;
+  overflow: visible;
+}
+._11 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 65.26%;
+  left: 32.42%;
+  width: 2.32%;
+  bottom: 7.92%;
+  top: 85.83%;
+  height: 6.25%;
+}
+.vector35 {
+  height: auto;
+  position: absolute;
+  right: 26.03%;
+  left: 73.97%;
+  width: 0%;
+  bottom: 14.17%;
+  top: 82.81%;
+  height: 3.02%;
+  overflow: visible;
+}
+._23 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 24.86%;
+  left: 72.82%;
+  width: 2.32%;
+  bottom: 7.92%;
+  top: 85.83%;
+  height: 6.25%;
+}
+.vector36 {
+  height: auto;
+  position: absolute;
+  right: 2.27%;
+  left: 97.73%;
+  width: 0%;
+  bottom: 14.17%;
+  top: 82.81%;
+  height: 3.02%;
+  overflow: visible;
+}
+._30 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 1.1%;
+  left: 96.58%;
+  width: 2.32%;
+  bottom: 7.92%;
+  top: 85.83%;
+  height: 6.25%;
+}
+.vector37 {
+  height: auto;
+  position: absolute;
+  right: 69.7%;
+  left: 30.3%;
+  width: 0%;
+  bottom: 14.17%;
+  top: 82.81%;
+  height: 3.02%;
+  overflow: visible;
+}
+._10 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 68.49%;
+  left: 29.19%;
+  width: 2.32%;
+  bottom: 7.92%;
+  top: 85.83%;
+  height: 6.25%;
+}
+.vector38 {
+  height: auto;
+  position: absolute;
+  right: 29.47%;
+  left: 70.53%;
+  width: 0%;
+  bottom: 14.17%;
+  top: 82.81%;
+  height: 3.02%;
+  overflow: visible;
+}
+._22 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 28.26%;
+  left: 69.43%;
+  width: 2.32%;
+  bottom: 7.92%;
+  top: 85.83%;
+  height: 6.25%;
+}
+.vector39 {
+  height: auto;
+  position: absolute;
+  right: 5.71%;
+  left: 94.29%;
+  width: 0%;
+  bottom: 14.17%;
+  top: 82.81%;
+  height: 3.02%;
+  overflow: visible;
+}
+._29 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 4.5%;
+  left: 93.18%;
+  width: 2.32%;
+  bottom: 7.92%;
+  top: 85.83%;
+  height: 6.25%;
+}
+.vector40 {
+  height: auto;
+  position: absolute;
+  right: 76.9%;
+  left: 23.1%;
+  width: 0%;
+  bottom: 14.17%;
+  top: 82.81%;
+  height: 3.02%;
+  overflow: visible;
+}
+._7 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 76.35%;
+  left: 22.49%;
+  width: 1.16%;
+  bottom: 7.92%;
+  top: 85.83%;
+  height: 6.25%;
+}
+.vector41 {
+  height: auto;
+  position: absolute;
+  right: 39.48%;
+  left: 60.52%;
+  width: 0%;
+  bottom: 14.17%;
+  top: 82.81%;
+  height: 3.02%;
+  overflow: visible;
+}
+._19 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 38.44%;
+  left: 59.24%;
+  width: 2.32%;
+  bottom: 7.92%;
+  top: 85.83%;
+  height: 6.25%;
+}
+.vector42 {
+  height: auto;
+  position: absolute;
+  right: 15.72%;
+  left: 84.28%;
+  width: 0%;
+  bottom: 14.17%;
+  top: 82.81%;
+  height: 3.02%;
+  overflow: visible;
+}
+._26 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 14.68%;
+  left: 83%;
+  width: 2.32%;
+  bottom: 7.92%;
+  top: 85.83%;
+  height: 6.25%;
+}
+.vector43 {
+  height: auto;
+  position: absolute;
+  right: 74.77%;
+  left: 25.23%;
+  width: 0%;
+  bottom: 14.17%;
+  top: 82.81%;
+  height: 3.02%;
+  overflow: visible;
+}
+._8 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 74.12%;
+  left: 24.72%;
+  width: 1.16%;
+  bottom: 7.92%;
+  top: 85.83%;
+  height: 6.25%;
+}
+.vector44 {
+  height: auto;
+  position: absolute;
+  right: 36.19%;
+  left: 63.81%;
+  width: 0%;
+  bottom: 14.17%;
+  top: 82.81%;
+  height: 3.02%;
+  overflow: visible;
+}
+._20 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 35.05%;
+  left: 62.64%;
+  width: 2.32%;
+  bottom: 7.92%;
+  top: 85.83%;
+  height: 6.25%;
+}
+.vector45 {
+  height: auto;
+  position: absolute;
+  right: 12.44%;
+  left: 87.56%;
+  width: 0%;
+  bottom: 14.17%;
+  top: 82.81%;
+  height: 3.02%;
+  overflow: visible;
+}
+._27 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 11.29%;
+  left: 86.4%;
+  width: 2.32%;
+  bottom: 7.92%;
+  top: 85.83%;
+  height: 6.25%;
+}
+.graph {
+  position: absolute;
+  inset: 0;
+}
+.group10 {
+  width: 532.04px;
+  height: 205.84px;
+  position: absolute;
+  right: 2.32%;
+  left: 9.6%;
+  width: 88.09%;
+  bottom: 17.08%;
+  top: 2.51%;
+  height: 80.41%;
+  overflow: visible;
+}
+.group11 {
+  width: 532.08px;
+  height: 205.84px;
+  position: absolute;
+  right: 2.25%;
+  left: 9.65%;
+  width: 88.09%;
+  bottom: 17.08%;
+  top: 2.51%;
+  height: 80.41%;
+  overflow: visible;
+}
+.dates {
+  color: #2a547c;
+  text-align: right;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - 8px);
+  top: 243px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.side-bar {
+  position: absolute;
+  inset: 0;
+}
+.group12 {
+  width: 57.31px;
+  height: 221.5px;
+  position: static;
+}
+.group-8343 {
+  width: 40.49px;
+  height: 221.5px;
+  position: static;
+}
+.group13 {
+  width: 34px;
+  height: 16px;
+  position: static;
+}
+.vector61 {
+  height: auto;
+  position: absolute;
+  right: 90.35%;
+  left: 8.93%;
+  width: 0.72%;
+  bottom: 17.08%;
+  top: 82.92%;
+  height: 0%;
+  overflow: visible;
+}
+._200 {
+  color: #2a547c;
+  text-align: right;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 91.88%;
+  left: 4.02%;
+  width: 4.1%;
+  bottom: 13.87%;
+  top: 79.88%;
+  height: 6.25%;
+}
+.group14 {
+  width: 33.59px;
+  height: 16px;
+  position: static;
+}
+.vector62 {
+  height: auto;
+  position: absolute;
+  right: 90.35%;
+  left: 8.93%;
+  width: 0.72%;
+  bottom: 37.18%;
+  top: 62.82%;
+  height: 0%;
+  overflow: visible;
+}
+._4002 {
+  color: #2a547c;
+  text-align: right;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 91.81%;
+  left: 4.09%;
+  width: 4.1%;
+  bottom: 34.01%;
+  top: 59.74%;
+  height: 6.25%;
+}
+.group15 {
+  width: 34.05px;
+  height: 16px;
+  position: static;
+}
+.vector63 {
+  height: auto;
+  position: absolute;
+  right: 90.35%;
+  left: 8.93%;
+  width: 0.72%;
+  bottom: 57.28%;
+  top: 42.72%;
+  height: 0%;
+  overflow: visible;
+}
+._600 {
+  color: #2a547c;
+  text-align: right;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 91.88%;
+  left: 4.02%;
+  width: 4.1%;
+  bottom: 54.12%;
+  top: 39.63%;
+  height: 6.25%;
+}
+.group16 {
+  width: 33.6px;
+  height: 16px;
+  position: static;
+}
+.vector64 {
+  height: auto;
+  position: absolute;
+  right: 90.35%;
+  left: 8.93%;
+  width: 0.72%;
+  bottom: 77.39%;
+  top: 22.61%;
+  height: 0%;
+  overflow: visible;
+}
+._800 {
+  color: #2a547c;
+  text-align: right;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 91.81%;
+  left: 4.09%;
+  width: 4.1%;
+  bottom: 74.23%;
+  top: 19.52%;
+  height: 6.25%;
+}
+.group17 {
+  width: 40.48px;
+  height: 16px;
+  position: static;
+}
+.vector65 {
+  height: auto;
+  position: absolute;
+  right: 90.35%;
+  left: 8.93%;
+  width: 0.72%;
+  bottom: 97.49%;
+  top: 2.51%;
+  height: 0%;
+  overflow: visible;
+}
+._1000 {
+  color: #2a547c;
+  text-align: right;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 91.88%;
+  left: 2.95%;
+  width: 5.17%;
+  bottom: 94.14%;
+  top: -0.39%;
+  height: 6.25%;
+}
+.vector66 {
+  height: auto;
+  position: absolute;
+  right: 90.35%;
+  left: 9.65%;
+  width: 0%;
+  bottom: 17.08%;
+  top: 2.51%;
+  height: 80.41%;
+  overflow: visible;
+}
+.no-of-bookings {
+  color: #2a547c;
+  text-align: right;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  left: 1px;
+  top: 166px;
+  transform-origin: 0 0;
+  transform: rotate(-90deg) scale(1, 1);
+}
+.hospitalised {
+  height: auto;
+  position: absolute;
+  right: 6.06%;
+  left: 14.53%;
+  width: 79.41%;
+  bottom: 30.41%;
+  top: 15.93%;
+  height: 53.67%;
+  overflow: visible;
+}
+.total-number-of-cases {
+  height: auto;
+  position: absolute;
+  right: 6.15%;
+  left: 14.58%;
+  width: 79.27%;
+  bottom: 36.45%;
+  top: 13.61%;
+  height: 49.94%;
+  overflow: visible;
+}
+.all-bookings {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  position: absolute;
+  left: 14px;
+  top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-7950 {
+  display: flex;
+  flex-direction: row;
+  gap: 19px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: calc(50% - 143.5px);
+  top: 347px;
+}
+.group-7949 {
+  flex-shrink: 0;
+  width: 116px;
+  height: 22px;
+  position: static;
+}
+.rectangle-198 {
+  background: var(--iwmi-dark-blue, #33527a);
+  border-radius: 10px;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+.line-42 {
+  border-style: solid;
+  border-color: var(--iwmi-dark-blue, #33527a);
+  border-width: 2px 0 0 0;
+  width: 18px;
+  height: 0px;
+  position: absolute;
+  left: 0px;
+  top: 10px;
+}
+.ev-bookings {
+  color: #363636;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 22px;
+  top: 0px;
+}
+.group-7948 {
+  flex-shrink: 0;
+  width: 153px;
+  height: 22px;
+  position: static;
+}
+.rectangle-1982 {
+  background: var(--iwmi-orange, #d87042);
+  border-style: solid;
+  border-color: var(--iwmi-orange, #d87042);
+  border-width: 1px;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: 138.34px;
+  top: 9px;
+  transform-origin: 0 0;
+  transform: rotate(-45deg) scale(1, 1);
+}
+.line-422 {
+  width: 18px;
+  height: 0px;
+  position: absolute;
+  left: 135px;
+  top: 9px;
+  overflow: visible;
+}
+.battery-bookings {
+  color: #363636;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 157px;
+  top: 0px;
+}
+.line-43 {
+  border-style: solid;
+  border-color: #e8e7e7;
+  border-width: 1px 0 0 0;
+  width: 630px;
+  height: 0px;
+  position: absolute;
+  left: 0px;
+  top: 46px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.frame-8712 {
+  background: #ffffff;
+  border-radius: 16px;
+  flex-shrink: 0;
+  width: 714px;
+  height: 404px;
+  position: relative;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+.line-432 {
+  border-style: solid;
+  border-color: #e8e7e7;
+  border-width: 1px 0 0 0;
+  width: 714px;
+  height: 0px;
+  position: absolute;
+  left: 0px;
+  top: 46px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.booking-statistics {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  position: absolute;
+  left: 14px;
+  top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-8204 {
+  width: 682px;
+  height: 324px;
+  position: absolute;
+  left: 14px;
+  top: 58px;
+}
+.graph2 {
+  height: auto;
+  position: absolute;
+  left: 144.25px;
+  top: 6px;
+  overflow: visible;
+}
+.precipitation-marks {
+  position: absolute;
+  inset: 0;
+}
+.side-bar2 {
+  width: 119.1px;
+  height: 284px;
+  position: static;
+}
+.vector74 {
+  height: auto;
+  position: absolute;
+  right: 78.89%;
+  left: 21.11%;
+  width: 0%;
+  bottom: 10.49%;
+  top: 1.85%;
+  height: 87.65%;
+  transform: translate(-0.5px, 0px);
+  overflow: visible;
+}
+.group20 {
+  width: 118.76px;
+  height: 250.22px;
+  position: static;
+}
+.group21 {
+  width: 98.66px;
+  height: 16px;
+  position: static;
+}
+.vector75 {
+  height: auto;
+  position: absolute;
+  right: 78.94%;
+  left: 20.3%;
+  width: 0.76%;
+  bottom: 17.89%;
+  top: 82.11%;
+  height: 0%;
+  overflow: visible;
+}
+.battery-booking {
+  color: #363636;
+  text-align: right;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 80.35%;
+  left: 6.6%;
+  width: 13.05%;
+  bottom: 15.13%;
+  top: 79.93%;
+  height: 4.94%;
+}
+.group22 {
+  width: 80.99px;
+  height: 16px;
+  position: static;
+}
+.vector76 {
+  height: auto;
+  position: absolute;
+  right: 78.94%;
+  left: 20.3%;
+  width: 0.76%;
+  bottom: 35.96%;
+  top: 64.04%;
+  height: 0%;
+  overflow: visible;
+}
+.total-battery {
+  color: #363636;
+  text-align: right;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 80.25%;
+  left: 9.19%;
+  width: 10.56%;
+  bottom: 33.2%;
+  top: 61.86%;
+  height: 4.94%;
+}
+.group23 {
+  width: 106.37px;
+  height: 16px;
+  position: static;
+}
+.vector77 {
+  height: auto;
+  position: absolute;
+  right: 78.94%;
+  left: 20.3%;
+  width: 0.76%;
+  bottom: 54.03%;
+  top: 45.97%;
+  height: 0%;
+  overflow: visible;
+}
+.rejected-booking {
+  color: #363636;
+  text-align: right;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 80.31%;
+  left: 5.47%;
+  width: 14.22%;
+  bottom: 51.27%;
+  top: 43.79%;
+  height: 4.94%;
+}
+.group24 {
+  width: 118.76px;
+  height: 16px;
+  position: static;
+}
+.vector78 {
+  height: auto;
+  position: absolute;
+  right: 78.94%;
+  left: 20.3%;
+  width: 0.76%;
+  bottom: 72.11%;
+  top: 27.89%;
+  height: 0%;
+  overflow: visible;
+}
+.non-active-booking {
+  color: #363636;
+  text-align: right;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 80.37%;
+  left: 3.65%;
+  width: 15.98%;
+  bottom: 69.35%;
+  top: 25.72%;
+  height: 4.94%;
+}
+.group25 {
+  width: 92.4px;
+  height: 16px;
+  position: static;
+}
+.vector79 {
+  height: auto;
+  position: absolute;
+  right: 78.94%;
+  left: 20.3%;
+  width: 0.76%;
+  bottom: 90.18%;
+  top: 9.82%;
+  height: 0%;
+  overflow: visible;
+}
+.active-booking {
+  color: #363636;
+  text-align: right;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 80.46%;
+  left: 7.52%;
+  width: 12.02%;
+  bottom: 87.42%;
+  top: 7.64%;
+  height: 4.94%;
+}
+.group26 {
+  width: 6.3px;
+  height: 27.01px;
+  position: static;
+}
+.vector80 {
+  height: auto;
+  position: absolute;
+  right: 78.9%;
+  left: 21.1%;
+  width: 0%;
+  bottom: 7.24%;
+  top: 89.74%;
+  height: 3.02%;
+  overflow: visible;
+}
+._0 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  position: absolute;
+  right: 78.4%;
+  left: 20.67%;
+  width: 0.92%;
+  bottom: 1.92%;
+  top: 93.76%;
+  height: 4.32%;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.group27 {
+  width: 35.29px;
+  height: 28.63px;
+  position: static;
+}
+.vector81 {
+  height: auto;
+  position: absolute;
+  right: 59.9%;
+  left: 40.1%;
+  width: 0%;
+  bottom: 7.24%;
+  top: 89.74%;
+  height: 3.02%;
+  overflow: visible;
+}
+._2002 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  position: absolute;
+  right: 57.35%;
+  left: 37.47%;
+  width: 5.18%;
+  bottom: 1.42%;
+  top: 93.76%;
+  height: 4.82%;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.group28 {
+  width: 48.13px;
+  height: 28.63px;
+  position: static;
+}
+.vector82 {
+  height: auto;
+  position: absolute;
+  right: 39.94%;
+  left: 60.06%;
+  width: 0%;
+  bottom: 7.24%;
+  top: 89.74%;
+  height: 3.02%;
+  overflow: visible;
+}
+._4003 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  position: absolute;
+  right: 36.5%;
+  left: 56.45%;
+  width: 7.06%;
+  bottom: 1.42%;
+  top: 93.76%;
+  height: 4.82%;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.group29 {
+  width: 51.34px;
+  height: 28.63px;
+  position: static;
+}
+.vector83 {
+  height: auto;
+  position: absolute;
+  right: 3.59%;
+  left: 96.41%;
+  width: 0%;
+  bottom: 7.24%;
+  top: 89.74%;
+  height: 3.02%;
+  overflow: visible;
+}
+._8002 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  position: absolute;
+  right: 0.05%;
+  left: 92.42%;
+  width: 7.53%;
+  bottom: 1.42%;
+  top: 93.76%;
+  height: 4.82%;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.group30 {
+  width: 44.92px;
+  height: 28.63px;
+  position: static;
+}
+.vector84 {
+  height: auto;
+  position: absolute;
+  right: 22.84%;
+  left: 77.16%;
+  width: 0%;
+  bottom: 7.24%;
+  top: 89.74%;
+  height: 3.02%;
+  overflow: visible;
+}
+._6002 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  position: absolute;
+  right: 19.79%;
+  left: 73.62%;
+  width: 6.59%;
+  bottom: 1.42%;
+  top: 93.76%;
+  height: 4.82%;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.group-8424 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-1401 {
+  background: #5088c6;
+  border-radius: 6px;
+  width: 31.23px;
+  position: absolute;
+  left: 144.66px;
+  bottom: -54.66%;
+  top: 68.86%;
+  height: 85.8%;
+  transform-origin: 0 0;
+  transform: rotate(-90deg) scale(1, 1);
+}
+.rectangle-1402 {
+  background: #5088c6;
+  border-radius: 6px;
+  width: 32.53px;
+  position: absolute;
+  left: 144.66px;
+  bottom: -0.84%;
+  top: 15.04%;
+  height: 85.8%;
+  transform-origin: 0 0;
+  transform: rotate(-90deg) scale(1, 1);
+}
+.rectangle-1403 {
+  background: #5088c6;
+  border-radius: 6px;
+  width: 31.23px;
+  position: absolute;
+  left: 144.66px;
+  bottom: -91.35%;
+  top: 32.71%;
+  height: 158.64%;
+  transform-origin: 0 0;
+  transform: rotate(-90deg) scale(1, 1);
+}
+.rectangle-1404 {
+  background: #5088c6;
+  border-radius: 6px;
+  width: 32.53px;
+  position: absolute;
+  left: 144.66px;
+  bottom: -118.41%;
+  top: 86.93%;
+  height: 131.48%;
+  transform-origin: 0 0;
+  transform: rotate(-90deg) scale(1, 1);
+}
+.rectangle-1405 {
+  background: #5088c6;
+  border-radius: 6px;
+  width: 32.53px;
+  position: absolute;
+  left: 144.66px;
+  bottom: -70.85%;
+  top: 50.78%;
+  height: 120.06%;
+  transform-origin: 0 0;
+  transform: rotate(-90deg) scale(1, 1);
+}
+.frame-8713 {
+  background: #ffffff;
+  border-radius: 16px;
+  flex: 1;
+  height: 404px;
+  position: relative;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+.group-8427 {
+  position: absolute;
+  inset: 0;
+}
+.ellipse-2 {
+  background: #7ebc60;
+  border-radius: 50%;
+  width: 198px;
+  height: 198px;
+  position: absolute;
+  left: 305px;
+  top: 80px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.ellipse-6 {
+  background: #6ec3fe;
+  border-radius: 50%;
+  width: 198px;
+  height: 198px;
+  position: absolute;
+  left: 305px;
+  top: 80px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.ellipse-7 {
+  background: #33527a;
+  border-radius: 50%;
+  width: 198px;
+  height: 198px;
+  position: absolute;
+  left: 305px;
+  top: 80px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.ellipse-8 {
+  background: #ea9546;
+  border-radius: 50%;
+  width: 198px;
+  height: 198px;
+  position: absolute;
+  left: 305px;
+  top: 80px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.ellipse-9 {
+  background: #d55391;
+  border-radius: 50%;
+  width: 198px;
+  height: 198px;
+  position: absolute;
+  left: 305px;
+  top: 80px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.ellipse-10 {
+  background: #a7c9ce;
+  border-radius: 50%;
+  width: 198px;
+  height: 198px;
+  position: absolute;
+  left: 305px;
+  top: 80px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.frame-87142 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 149px;
+  top: 151px;
+}
+._76-100-span3 {
+  color: #000000;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: lowercase;
+}
+._76-100-span4 {
+  color: #000000;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+}
+.line-433 {
+  border-style: solid;
+  border-color: #e8e7e7;
+  border-width: 1px 0 0 0;
+  width: 412px;
+  height: 0px;
+  position: absolute;
+  left: 0px;
+  top: 46px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.revenue {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  position: absolute;
+  left: 14px;
+  top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-8730 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 333px;
+  position: absolute;
+  left: calc(50% - 167px);
+  top: 325px;
+}
+.frame-8728 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.ellipse-11 {
+  background: #7ebc60;
+  border-radius: 50%;
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  position: relative;
+}
+.madhapur-hub {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-8729 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.ellipse-112 {
+  background: #6ec3fe;
+  border-radius: 50%;
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  position: relative;
+}
+.ameerpet-hub {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-87302 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.ellipse-113 {
+  background: #33527a;
+  border-radius: 50%;
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  position: relative;
+}
+.nagole-hub {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-8731 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.ellipse-114 {
+  background: #ea9546;
+  border-radius: 50%;
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  position: relative;
+}
+.ecil-hub {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-8732 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.ellipse-115 {
+  background: #d45391;
+  border-radius: 50%;
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  position: relative;
+}
+.aramghar-hub {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-8733 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.ellipse-116 {
+  background: #a7c9ce;
+  border-radius: 50%;
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  position: relative;
+}
+.miyapur-hub {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+} */
+.dashboard-card {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 24px;
+  }
+  
+  .more-button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+  
+  }
+  
+  .dashboard-card-content {
+    position: absolute;
+    top: 125px;
+    font-size: 24px;
+    text-align: start;
+  }
+  .example-spacer{
+  flex: 1 0 0;
+  }
+  .frame-8717 {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 8px 10px 8px 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    position: relative;
+  }

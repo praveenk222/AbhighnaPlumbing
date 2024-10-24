@@ -7,6 +7,7 @@ import { AddProductComponent } from './product-details/add-product/add-product.c
 import { GetallordersComponent } from './getallorders/getallorders.component';
 import { MeasuremetTypeComponent } from './LookUp/measuremet-type.component';
 import { MesurmentLookupComponent } from './mesurment-lookup/mesurment-lookup.component';
+import { DashbordComponent } from './dashbord/dashbord.component';
 
 
 
@@ -18,6 +19,7 @@ const routes: Routes = [
 {path:'',component:LoginComponent},
 {path:'lookup',component:MeasuremetTypeComponent},
 {path:'mlookup',component:MesurmentLookupComponent},
+{path:'dashboard',component:DashbordComponent},
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
