@@ -38,7 +38,7 @@ app.use(bodyparser.json());
 app.use(express.json());
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }));
-
+app.use(express.static("frontend"))// to run angular application.
 
 app.use("/api/members", memberRoute);
 app.use("/api/products", productRoute);
