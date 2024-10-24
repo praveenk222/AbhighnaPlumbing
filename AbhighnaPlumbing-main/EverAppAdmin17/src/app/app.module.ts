@@ -73,6 +73,7 @@ import { MeasuremetTypeComponent } from './LookUp/measuremet-type.component';
 import { MesurmentLookupComponent } from './mesurment-lookup/mesurment-lookup.component';
 import { DashbordComponent } from './dashbord/dashbord.component';
 import { MaterialModule } from './Modules/material.module';
+import { SuccessInterceptor } from './services/toastersuccess.interceptor';
 
 @NgModule({
   declarations: [
@@ -92,8 +93,6 @@ import { MaterialModule } from './Modules/material.module';
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    MatNativeDateModule,
-    MatDatepickerModule,
     RouterModule,
     RouterOutlet,
     BrowserAnimationsModule,
@@ -106,7 +105,7 @@ import { MaterialModule } from './Modules/material.module';
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: spinnerInterceptor, multi: true },
-    // { provide: HTTP_INTERCEPTORS, useClass: SuccessInterceptor, multi: true },
+    { provide: HTTP_INTERCEPTORS, useClass: SuccessInterceptor, multi: true },
     provideHttpClient(),
    
   ],

@@ -16,7 +16,7 @@ export class ProductDetailsComponent {
   displayedColumns: string[] = ['ProductID', 'Name','Type', 'Measurement','UnitPrice', 'OldPrice', 'Discount', 'UnitInStock', 'ProductAvailable', 'ShortDescription','actions'];
   dataSource = new MatTableDataSource<any>([]);
   pageSizeOptions: number[] = [5, 10, 20];
-
+  totalItems: number = 100;
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
   constructor(private productService: ProductDetailsService,private alerts:SweetAlertServiceService,
@@ -31,6 +31,10 @@ export class ProductDetailsComponent {
   getProduct() {
     this.productService.getProductDetails().subscribe((res: any) => {
       this.dataSource.data = res;
+      if(res){
+
+        this.totalItems=res.length;
+      }
     });
   }
   editProduct(id: any) {

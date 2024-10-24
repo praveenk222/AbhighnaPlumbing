@@ -27,7 +27,21 @@ async function login(req,res){debugger
         .input('Password', sql.NVarChar, req.body.Password)
             .execute('UserLogin')
         //result will give all  about table with data
-        res.send(result.recordset);
+        let permissions;
+        if(result.recordset[0].UserID){
+            const userID = result.recordset[0].UserID;
+
+            // Call getUserPermissions function with UserID
+             permissions = await getUserPermissionsByUserID(userID); // Helper function without res
+
+          
+        }
+        res.status(200).send({
+            IsSuccess: true,
+            Message: 'Login successful',
+            user: result.recordset[0],
+            Permissions: permissions
+        });
 
     } catch (err) {
         res.status(500).send('Internal Server Error')
@@ -64,6 +78,22 @@ async function getUserPermissions(req, res) {
          return res.status(500).json({isSuccess:false, message:'Error getting member',data:error.message});
     }
 };
+async function getUserPermissionsByUserID(UserID) {
+    try {
+        const pool = await sql.connect();
+
+        // Execute the stored procedure to get user permissions
+        const result = await pool.request()
+            .input('UserID', sql.Int, UserID)
+            .execute('[dbo].[GetUserPermissions]');
+
+        return result.recordset || null; // Return the result of permissions
+    } catch (error) {
+        console.error('Error fetching permissions:', error);
+        throw error; // Re-throw the error to handle it in the calling method
+    }
+}
+
 async function getUsersSP(req,res){debugger
     let procedureName = 'my_procedure';
     pool.query(`CALL ${procedureName}($1, $2, $3)`, ['param1', 'param2', 'param3'], (error, results) => {

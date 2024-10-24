@@ -2408,3 +2408,1185 @@
     flex-shrink: 0;
     position: relative;
   }
+
+  .frame-8725,
+.frame-8725 * {
+  box-sizing: border-box;
+}
+.frame-8725 {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 1178px;
+  height: 942px;
+  position: relative;
+}
+.frame-8724 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-2608320 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.revenue {
+  color: #363636;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: relative;
+}
+.frame-2608324 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-8073 {
+  background: var(--primary, #3355b9);
+  border-radius: 24px;
+  padding: 16px 20px 16px 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 36px;
+  position: relative;
+}
+.generate-report {
+  color: #ffffff;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+}
+.mh {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 16px;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 346px;
+  position: relative;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+}
+.group-8427 {
+  position: absolute;
+  inset: 0;
+}
+.ellipse-2 {
+  background: #7ebc60;
+  border-radius: 50%;
+  width: 236px;
+  height: 236px;
+  position: absolute;
+  left: 281px;
+  top: 82px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.ellipse-6 {
+  background: #6ec3fe;
+  border-radius: 50%;
+  width: 236px;
+  height: 236px;
+  position: absolute;
+  left: 281px;
+  top: 82px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.ellipse-7 {
+  background: #33527a;
+  border-radius: 50%;
+  width: 236px;
+  height: 236px;
+  position: absolute;
+  left: 281px;
+  top: 82px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.ellipse-8 {
+  background: #ea9546;
+  border-radius: 50%;
+  width: 236px;
+  height: 236px;
+  position: absolute;
+  left: 281px;
+  top: 82px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.ellipse-9 {
+  background: #d55391;
+  border-radius: 50%;
+  width: 236px;
+  height: 236px;
+  position: absolute;
+  left: 281px;
+  top: 82px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.ellipse-10 {
+  background: #a7c9ce;
+  border-radius: 50%;
+  width: 236px;
+  height: 236px;
+  position: absolute;
+  left: 281px;
+  top: 82px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.frame-8714 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 106px;
+  top: 172.5px;
+}
+.total-revenue {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+._76-100 {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+._76-100-span {
+  color: #000000;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: lowercase;
+}
+._76-100-span2 {
+  color: #000000;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+}
+.frame-8730 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 395px;
+  top: 146px;
+}
+.frame-8728 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.ellipse-11 {
+  background: #7ebc60;
+  border-radius: 50%;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+.madhapur-hub-18-000 {
+  color: #000000;
+  text-align: left;
+  font-family: "-", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.madhapur-hub-18-000-span {
+  color: #000000;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.madhapur-hub-18-000-span2 {
+  color: #000000;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+.frame-8729 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.ellipse-112 {
+  background: #6ec3fe;
+  border-radius: 50%;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+.ameerpet-hub-17-500 {
+  color: #000000;
+  text-align: left;
+  font-family: "-", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.ameerpet-hub-17-500-span {
+  color: #000000;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.ameerpet-hub-17-500-span2 {
+  color: #000000;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+.frame-87302 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.ellipse-113 {
+  background: #33527a;
+  border-radius: 50%;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+.nagole-hub-15-000 {
+  color: #000000;
+  text-align: left;
+  font-family: "-", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.nagole-hub-15-000-span {
+  color: #000000;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.nagole-hub-15-000-span2 {
+  color: #000000;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+.frame-8731 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 691px;
+  top: 146px;
+}
+.frame-87312 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.ellipse-114 {
+  background: #ea9546;
+  border-radius: 50%;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+.ecil-hub-12-100 {
+  color: #000000;
+  text-align: left;
+  font-family: "-", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.ecil-hub-12-100-span {
+  color: #000000;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.ecil-hub-12-100-span2 {
+  color: #000000;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+.frame-8732 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.ellipse-115 {
+  background: #d45391;
+  border-radius: 50%;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+.aramghar-hub-7-500 {
+  color: #000000;
+  text-align: left;
+  font-family: "-", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.aramghar-hub-7-500-span {
+  color: #000000;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.aramghar-hub-7-500-span2 {
+  color: #000000;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+.frame-8733 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.ellipse-116 {
+  background: #a7c9ce;
+  border-radius: 50%;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+.miyapur-hub-6-000 {
+  color: #000000;
+  text-align: left;
+  font-family: "-", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.miyapur-hub-6-000-span {
+  color: #000000;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.miyapur-hub-6-000-span2 {
+  color: #000000;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+.frame-2608341 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 1118px;
+  position: absolute;
+  left: 14px;
+  top: 14px;
+}
+.revenue-by-location {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-2608166 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.text-holder {
+  background: #ffffff;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #e8e7e7;
+  border-width: 1px;
+  padding: 8px 14px 8px 14px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 188.4px;
+  position: relative;
+}
+.hub-centre {
+  color: #363636;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.800000011920929;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.iconamoon-search-fill {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.this-month {
+  color: #363636;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.800000011920929;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.ep-arrow-down-bold {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.line-43 {
+  border-style: solid;
+  border-color: #e8e7e7;
+  border-width: 1px 0 0 0;
+  width: 1146px;
+  height: 0px;
+  position: absolute;
+  left: 0px;
+  top: 60px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.frame-8709 {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 14px;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 451px;
+  position: relative;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+.yearly-revenue {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.iconamoon-search-fill2 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.this-year {
+  color: #363636;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.800000011920929;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.ep-arrow-down-bold2 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.chart {
+  width: 1101px;
+  height: 312px;
+  position: absolute;
+  left: 22.5px;
+  top: 84px;
+  overflow: hidden;
+}
+.horizontal-bar {
+  position: absolute;
+  inset: 0;
+}
+.group {
+  width: 42.68px;
+  height: 27.63px;
+  position: static;
+}
+.vector5 {
+  height: auto;
+  position: absolute;
+  right: 88.49%;
+  left: 11.51%;
+  width: 0%;
+  bottom: 6.16%;
+  top: 90.54%;
+  height: 3.3%;
+  overflow: visible;
+}
+.jan {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 86.69%;
+  left: 9.43%;
+  width: 3.88%;
+  bottom: 0.6%;
+  top: 93.84%;
+  height: 5.56%;
+}
+.vector6 {
+  height: auto;
+  position: absolute;
+  right: 81.14%;
+  left: 18.86%;
+  width: 0%;
+  bottom: 6.16%;
+  top: 90.54%;
+  height: 3.3%;
+  overflow: visible;
+}
+.feb {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 79.34%;
+  left: 16.78%;
+  width: 3.88%;
+  bottom: 0.6%;
+  top: 93.84%;
+  height: 5.56%;
+}
+.vector7 {
+  height: auto;
+  position: absolute;
+  right: 73.51%;
+  left: 26.49%;
+  width: 0%;
+  bottom: 6.16%;
+  top: 90.54%;
+  height: 3.3%;
+  overflow: visible;
+}
+.mar {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 71.79%;
+  left: 24.33%;
+  width: 3.88%;
+  bottom: 0.6%;
+  top: 93.84%;
+  height: 5.56%;
+}
+.group2 {
+  width: 38.62px;
+  height: 27.63px;
+  position: static;
+}
+.vector8 {
+  height: auto;
+  position: absolute;
+  right: 66.06%;
+  left: 33.94%;
+  width: 0%;
+  bottom: 6.16%;
+  top: 90.54%;
+  height: 3.3%;
+  overflow: visible;
+}
+.apr {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 64.53%;
+  left: 31.97%;
+  width: 3.51%;
+  bottom: 0.6%;
+  top: 93.84%;
+  height: 5.56%;
+}
+.group3 {
+  width: 46.75px;
+  height: 27.65px;
+  position: static;
+}
+.vector9 {
+  height: auto;
+  position: absolute;
+  right: 58.73%;
+  left: 41.27%;
+  width: 0%;
+  bottom: 6.16%;
+  top: 90.54%;
+  height: 3.3%;
+  overflow: visible;
+}
+.may {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 56.74%;
+  left: 39.01%;
+  width: 4.25%;
+  bottom: 0.59%;
+  top: 93.85%;
+  height: 5.56%;
+}
+.group4 {
+  width: 42.68px;
+  height: 27.65px;
+  position: static;
+}
+.vector10 {
+  height: auto;
+  position: absolute;
+  right: 51.28%;
+  left: 48.72%;
+  width: 0%;
+  bottom: 6.16%;
+  top: 90.54%;
+  height: 3.3%;
+  overflow: visible;
+}
+.jun {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 49.44%;
+  left: 46.68%;
+  width: 3.88%;
+  bottom: 0.59%;
+  top: 93.85%;
+  height: 5.56%;
+}
+.group5 {
+  width: 44.72px;
+  height: 27.63px;
+  position: static;
+}
+.vector11 {
+  height: auto;
+  position: absolute;
+  right: 6.55%;
+  left: 93.45%;
+  width: 0%;
+  bottom: 6.16%;
+  top: 90.54%;
+  height: 3.3%;
+  overflow: visible;
+}
+.dec {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 4.75%;
+  left: 91.19%;
+  width: 4.06%;
+  bottom: 0.6%;
+  top: 93.84%;
+  height: 5.56%;
+}
+.vector12 {
+  height: auto;
+  position: absolute;
+  right: 28.97%;
+  left: 71.03%;
+  width: 0%;
+  bottom: 6.16%;
+  top: 90.54%;
+  height: 3.3%;
+  overflow: visible;
+}
+.sep {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 27.1%;
+  left: 68.84%;
+  width: 4.06%;
+  bottom: 0.6%;
+  top: 93.84%;
+  height: 5.56%;
+}
+.vector13 {
+  height: auto;
+  position: absolute;
+  right: 13.97%;
+  left: 86.03%;
+  width: 0%;
+  bottom: 6.16%;
+  top: 90.54%;
+  height: 3.3%;
+  overflow: visible;
+}
+.nov {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 12.13%;
+  left: 83.81%;
+  width: 4.06%;
+  bottom: 0.6%;
+  top: 93.84%;
+  height: 5.56%;
+}
+.group6 {
+  width: 40.65px;
+  height: 27.63px;
+  position: static;
+}
+.vector14 {
+  height: auto;
+  position: absolute;
+  right: 21.42%;
+  left: 78.58%;
+  width: 0%;
+  bottom: 6.16%;
+  top: 90.54%;
+  height: 3.3%;
+  overflow: visible;
+}
+.oct {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 19.73%;
+  left: 76.58%;
+  width: 3.69%;
+  bottom: 0.6%;
+  top: 93.84%;
+  height: 5.56%;
+}
+.group7 {
+  width: 34.55px;
+  height: 27.63px;
+  position: static;
+}
+.vector15 {
+  height: auto;
+  position: absolute;
+  right: 43.82%;
+  left: 56.18%;
+  width: 0%;
+  bottom: 6.16%;
+  top: 90.54%;
+  height: 3.3%;
+  overflow: visible;
+}
+.jul {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 42.34%;
+  left: 54.52%;
+  width: 3.14%;
+  bottom: 0.6%;
+  top: 93.84%;
+  height: 5.56%;
+}
+.vector16 {
+  height: auto;
+  position: absolute;
+  right: 36.37%;
+  left: 63.63%;
+  width: 0%;
+  bottom: 6.16%;
+  top: 90.54%;
+  height: 3.3%;
+  overflow: visible;
+}
+.aug {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 34.55%;
+  left: 61.39%;
+  width: 4.06%;
+  bottom: 0.6%;
+  top: 93.84%;
+  height: 5.56%;
+}
+.graph {
+  height: auto;
+  position: absolute;
+  left: 70.14px;
+  top: 8.58px;
+  overflow: visible;
+}
+.side-bar {
+  position: absolute;
+  inset: 0;
+}
+.group10 {
+  width: 70.79px;
+  height: 294px;
+  position: static;
+}
+.group-8343 {
+  width: 48.05px;
+  height: 294px;
+  position: static;
+}
+.group11 {
+  width: 40.34px;
+  height: 20px;
+  position: static;
+}
+.vector32 {
+  height: auto;
+  position: absolute;
+  right: 93.57%;
+  left: 5.96%;
+  width: 0.47%;
+  bottom: 9.28%;
+  top: 90.72%;
+  height: 0%;
+  overflow: visible;
+}
+._0 {
+  color: #2a547c;
+  text-align: right;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 94.57%;
+  left: 2.77%;
+  width: 2.67%;
+  bottom: 6.2%;
+  top: 87.39%;
+  height: 6.41%;
+}
+.group12 {
+  width: 39.86px;
+  height: 20px;
+  position: static;
+}
+.vector33 {
+  height: auto;
+  position: absolute;
+  right: 93.57%;
+  left: 5.96%;
+  width: 0.47%;
+  bottom: 31.28%;
+  top: 68.72%;
+  height: 0%;
+  overflow: visible;
+}
+._20-k {
+  color: #2a547c;
+  text-align: right;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 94.52%;
+  left: 2.81%;
+  width: 2.67%;
+  bottom: 28.24%;
+  top: 65.35%;
+  height: 6.41%;
+}
+.group13 {
+  width: 40.4px;
+  height: 20px;
+  position: static;
+}
+.vector34 {
+  height: auto;
+  position: absolute;
+  right: 93.57%;
+  left: 5.96%;
+  width: 0.47%;
+  bottom: 53.27%;
+  top: 46.73%;
+  height: 0%;
+  overflow: visible;
+}
+._40-k {
+  color: #2a547c;
+  text-align: right;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 94.57%;
+  left: 2.76%;
+  width: 2.67%;
+  bottom: 50.23%;
+  top: 43.36%;
+  height: 6.41%;
+}
+.group14 {
+  width: 39.87px;
+  height: 20px;
+  position: static;
+}
+.vector35 {
+  height: auto;
+  position: absolute;
+  right: 93.57%;
+  left: 5.96%;
+  width: 0.47%;
+  bottom: 75.26%;
+  top: 24.74%;
+  height: 0%;
+  overflow: visible;
+}
+._60-k {
+  color: #2a547c;
+  text-align: right;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 94.52%;
+  left: 2.81%;
+  width: 2.67%;
+  bottom: 72.24%;
+  top: 21.35%;
+  height: 6.41%;
+}
+.group15 {
+  width: 48.04px;
+  height: 20px;
+  position: static;
+}
+.vector36 {
+  height: auto;
+  position: absolute;
+  right: 93.57%;
+  left: 5.96%;
+  width: 0.47%;
+  bottom: 97.25%;
+  top: 2.75%;
+  height: 0%;
+  overflow: visible;
+}
+._80-k {
+  color: #2a547c;
+  text-align: right;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  right: 94.57%;
+  left: 2.07%;
+  width: 3.37%;
+  bottom: 94.02%;
+  top: -0.43%;
+  height: 6.41%;
+}
+.vector37 {
+  height: auto;
+  position: absolute;
+  right: 93.57%;
+  left: 6.43%;
+  width: 0%;
+  bottom: 9.28%;
+  top: 2.75%;
+  height: 87.97%;
+  overflow: visible;
+}
+.no-of-bookings {
+  color: #2a547c;
+  text-align: right;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 199px;
+  transform-origin: 0 0;
+  transform: rotate(-90deg) scale(1, 1);
+}
+.hospitalised {
+  height: auto;
+  position: absolute;
+  right: 6.28%;
+  left: 11.48%;
+  width: 82.25%;
+  bottom: 23.86%;
+  top: 17.42%;
+  height: 58.71%;
+  overflow: visible;
+}
+.frame-87303 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 526px;
+  top: 420px;
+}
+.ellipse-117 {
+  background: #e86933;
+  border-radius: 50%;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+}
+.revenue2 {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
