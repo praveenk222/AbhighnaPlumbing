@@ -74,6 +74,7 @@ import { MesurmentLookupComponent } from './mesurment-lookup/mesurment-lookup.co
 import { DashbordComponent } from './dashbord/dashbord.component';
 import { MaterialModule } from './Modules/material.module';
 import { SuccessInterceptor } from './services/toastersuccess.interceptor';
+import { InventoryComponent } from './inventory/inventory.component';
 
 @NgModule({
   declarations: [
@@ -87,6 +88,7 @@ import { SuccessInterceptor } from './services/toastersuccess.interceptor';
     MeasuremetTypeComponent,
     MesurmentLookupComponent,
     DashbordComponent,
+    InventoryComponent,
 
   ],
   imports: [
