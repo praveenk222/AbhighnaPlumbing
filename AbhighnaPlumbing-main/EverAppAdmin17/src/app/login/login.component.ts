@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { UsersService } from '../services/users.service';
 import { SweetAlertServiceService } from '../services/sweet-alert-service.service';
 import { NgxSpinnerService } from 'ngx-spinner';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -13,7 +14,8 @@ import { NgxSpinnerService } from 'ngx-spinner';
 export class LoginComponent {
   loginForm: FormGroup;
 
-  constructor(private fb: FormBuilder,private router:Router,private users:UsersService,private spinner:NgxSpinnerService,
+  constructor(private fb: FormBuilder,private router:Router,private users:UsersService,
+    private spinner:NgxSpinnerService,private auths:AuthService,
     private salert:SweetAlertServiceService
   ) {
     this.loginForm = this.fb.group({
@@ -31,6 +33,7 @@ this.spinner.show();
           console.log(res)
           if(res){
             this.salert.showSuccess('Login done','')
+            this.auths.login(res.Permissions);
             console.log(res.Permissions);
             this.router.navigate(['/dashboard'])
           }
