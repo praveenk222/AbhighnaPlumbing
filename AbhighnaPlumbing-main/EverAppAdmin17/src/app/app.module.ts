@@ -85,7 +85,6 @@ import { RecieptComponent } from './reciept/reciept.component';
     GetallordersComponent,
     CreateOrderComponent,
     NavComponent,
-    LoginComponent,
     MeasuremetTypeComponent,
     MesurmentLookupComponent,
     DashbordComponent,

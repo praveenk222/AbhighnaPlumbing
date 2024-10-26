@@ -1,15 +1,13 @@
 
 
 
-<!-- Login component: Only shown if not logged in -->
-<div *ngIf="!isLogin">
-    <app-login></app-login>
-  </div>
+
+
+  <!-- Show navbar only if logged in -->
+    <app-navbar></app-navbar>
+ 
   
-  <!-- Navbar component: Only shown if logged in -->
-  <div *ngIf="isLogin">
-    <app-navi></app-navi>
-  </div>
+
   
   <!-- Button to toggle login state for testing -->
   

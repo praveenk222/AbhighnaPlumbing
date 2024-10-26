@@ -10,6 +10,7 @@ import { MesurmentLookupComponent } from './mesurment-lookup/mesurment-lookup.co
 import { DashbordComponent } from './dashbord/dashbord.component';
 import { InventoryComponent } from './inventory/inventory.component';
 import { RecieptComponent } from './reciept/reciept.component';
+import { AuthGuard } from './auth.guard';
 
 
 
@@ -17,13 +18,14 @@ const routes: Routes = [
   {path:'getProduct',component:ProductDetailsComponent},
   {path:'addproduct/:id',component:AddProductComponent},
 {path:"CreateOrder",component:CreateOrderComponent},
-{path:'orderlist',component:GetallordersComponent},
-{path:'',component:LoginComponent},
-{path:'lookup',component:MeasuremetTypeComponent},
-{path:'mlookup',component:MesurmentLookupComponent},
-{path:'dashboard',component:DashbordComponent},
+{path:'orderlist',component:GetallordersComponent, canActivate: [AuthGuard]},
+// {path:'',component:LoginComponent},
+{path:'lookup',component:MeasuremetTypeComponent , canActivate: [AuthGuard]},
+{path:'mlookup',component:MesurmentLookupComponent, canActivate: [AuthGuard]},
+{path:'dashboard',component:DashbordComponent, canActivate: [AuthGuard]},
 {path:'inventory',component:InventoryComponent},
-{path:'reciept',component:RecieptComponent}
+{path:'reciept',component:RecieptComponent},
+{ path: '', loadChildren: () => import('./Admin/admin.module').then(m => m.AdminModule) },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -19,46 +19,26 @@ import { NavigationStart, Router } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit{
-  isLogin:boolean=false;
+  isLoggedIn = !!localStorage.getItem('isLoggedIn');
   title = 'EverAdminPanel';
   private sidenav: MatSidenav;
-code:number;
+  code:number;
   public isMenuOpen = true;
   loginForm: FormGroup;
   navitems: any;
-  private breakpointObserver = inject(BreakpointObserver);
   showHead:boolean=false;
-  isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
-    .pipe(
-      map(result => result.matches),
-      shareReplay()
-    );
-constructor(private overlay:OverlayContainer,
-  private fb: FormBuilder,private router:Router,private users:UsersService,
-  private spinner:NgxSpinnerService,private auths:AuthService,
-  private salert:SweetAlertServiceService){
-  this.isMenuOpen = false;
-  this.loginForm = this.fb.group({
-    UserName: ['admin', ],
-    Password: ['admin', [Validators.required]]
-  });
-  console.log('login user',this.auths.getCurrentUser())
- if(this.auths.getCurrentUser().length > 0){
-
-   this.isLogin=!this.isLogin;
-   alert();
- }
-}
-  get isHandset(): boolean {
-    return this.breakpointObserver.isMatched(Breakpoints.Handset);
-  }
-  ngDoCheck() {
-    if (this.isHandset) {
+ 
+    constructor(private overlay:OverlayContainer,
+    private fb: FormBuilder,private router:Router,private users:UsersService,
+    private spinner:NgxSpinnerService,private auths:AuthService,
+    private salert:SweetAlertServiceService){
       this.isMenuOpen = false;
-    } else {
-      this.isMenuOpen = true;
-    }      
+   
+      console.log('login user',this.auths.getCurrentUser())
+
 }
+ 
+      
 ngOnInit() {
   this.toggleControl.valueChanges.subscribe(
     (darkMode:any)=>{
@@ -79,25 +59,7 @@ ngOnInit() {
 
 
 }
-onSubmit() {
-  this.spinner.show();
-      if (this.loginForm.valid) {
-        // Handle login logic here
-        this.users.loginAdmin(this.loginForm.value).subscribe(
-          res=>{
-            console.log(res)
-            if(res){
-              this.salert.showSuccess('Login done','')
-              this.auths.login(res.Permissions);
-              this.isLogin=!this.isLogin;
-              console.log(res.Permissions);
-              this.navitems=res.Permissions;
-              this.router.navigate(['/dashboard'])
-            }
-          }
-        )
-      }
-    }
+
 toggleControl = new FormControl(false);
 @HostBinding('class')  className = '';
 darkClassName = 'theme-dark';
@@ -105,14 +67,18 @@ lightClassName = 'theme-light';
 pincode(){
  
 }
-// handle(event:any){console.log(this.code.toString().length)
-//   if(this.code.toString().length == 6){
-//   this.http.get(`https://api.postalpincode.in/pincode/${this.code}`).subscribe((res:any)=>{
-//     console.log(res)
-//   })
-// }
-// }
 
+  // Example login method
+  login() {
+    this.isLoggedIn = true;
+    localStorage.setItem('isLoggedIn', 'true');  // Update login state in local storage
+    this.router.navigate(['/home']);  // Redirect to home page after login
+  }
 
+  logout() {
+    this.isLoggedIn = false;
+    localStorage.removeItem('isLoggedIn');
+    this.router.navigate(['/login']);  // Redirect to login page after logout
+  }
 
 }

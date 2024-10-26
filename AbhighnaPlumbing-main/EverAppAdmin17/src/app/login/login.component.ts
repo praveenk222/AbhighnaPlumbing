@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { UsersService } from '../services/users.service';
@@ -13,7 +13,7 @@ import { AuthService } from '../services/auth.service';
 })
 export class LoginComponent {
   loginForm: FormGroup;
-
+  @Output() loginEvent = new EventEmitter<void>();
   constructor(private fb: FormBuilder,private router:Router,private users:UsersService,
     private spinner:NgxSpinnerService,private auths:AuthService,
     private salert:SweetAlertServiceService
@@ -24,7 +24,12 @@ export class LoginComponent {
     });
   }
 
-  onSubmit() {
+  login() {
+    // Perform login logic
+    this.loginEvent.emit(); 
+    this.onSubmit(); // Notify parent component of login
+  }
+  onSubmit() {debugger
 this.spinner.show();
     if (this.loginForm.valid) {
       // Handle login logic here
@@ -32,8 +37,10 @@ this.spinner.show();
         res=>{
           console.log(res)
           if(res){
+            localStorage.setItem('isLoggedIn', 'true');
             this.salert.showSuccess('Login done','')
             this.auths.login(res.Permissions);
+            
             console.log(res.Permissions);
             this.router.navigate(['/dashboard'])
           }
