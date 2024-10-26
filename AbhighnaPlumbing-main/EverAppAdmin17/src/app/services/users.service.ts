@@ -133,19 +133,11 @@ getordersummeryByBookingNo(bookingNo:string){
     }
     return this.http.post(this.apiUrl+`orders/getBookingndUserSummaryByBookingID`,bookingdata);
   }
-  postcomplain(data:any):Observable<any>{
-    return this.http.post(this.apiUrl+'customers/adComplains',data)
-  }
-  getnavlist(){
-    return this.http.get(this.apiUrl+'customers/getLeftnavbar')
-  }
-  getNavById(userid:number){
-    return this.http.get(this.apiUrl+'customers/getLeftNavbarByID/'+userid)
-  }
-  getusertabbyid(){
-  }
+
+ 
+ 
   getdasboarddata(){
-    return this.http.get(this.apiUrl+'/customers/getDashboardData')
+    return this.http.get(this.apiUrl+'customers/getDashboardData')
   }
   getadminUsers(){
     return this.http.get(this.apiUrl+'customers/getAdminUserList')
@@ -153,29 +145,7 @@ getordersummeryByBookingNo(bookingNo:string){
   getadminUserdetails(userid:number){
     return this.http.get(this.apiUrl+'customers/getsecurityusers/'+userid)
   }
-  saveUserdata(postdata:any){
-    return this.http.post(this.apiUrl+'customers/savePriceData',postdata)
-  } 
-  savehub(postdata:any){
-    return this.http.post(this.apiUrl+'products/savehub',postdata)
-  } 
-  savePrice(postdata:any){
-    return this.http.post(this.apiUrl+'counts/savePrice',postdata)
-  } 
-  async getPridcedata():  Promise<any> {    
 
-    return new Promise((resolve, reject) => {
-      this.http.get(this.apiUrl+'customers/getPriceList').subscribe(
-        (data) => {
-          resolve(data);
-        },
-        (error) => {
-          reject(error);
-        }
-      );
-    });
-  }
-sendmail(data:any):Observable<any>{
-  return this.http.post(this.apiUrl+'customers/forgotpassword',data)
-}
+  
+
 }

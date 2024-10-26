@@ -85,6 +85,7 @@ import { RecieptComponent } from './reciept/reciept.component';
     GetallordersComponent,
     CreateOrderComponent,
     NavComponent,
+    LoginComponent,
     MeasuremetTypeComponent,
     MesurmentLookupComponent,
     DashbordComponent,
@@ -103,14 +104,14 @@ import { RecieptComponent } from './reciept/reciept.component';
     CdkTableModule,
     CdkTreeModule,
     DragDropModule,
-    MaterialModule,   
+    MaterialModule,
+   
     NgChartsModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: spinnerInterceptor, multi: true },
-  
-    // { provide: HTTP_INTERCEPTORS, useClass: SuccessInterceptor, multi: true },
+    { provide: HTTP_INTERCEPTORS, useClass: SuccessInterceptor, multi: true },
     provideHttpClient(),
  
   ],

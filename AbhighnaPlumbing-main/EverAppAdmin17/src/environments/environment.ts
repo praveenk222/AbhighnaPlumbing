@@ -11,7 +11,6 @@ export const environment = {
 m_apiurl:'https://everbackend.onrender.com/api',
 // apiurl:'https://everbackend.onrender.com/api/v1/adminweb/',
 apiurl:'https://plumbing-9l4v.onrender.com/api',
-
   // apiurl:'https://172.188.80.209:8443/api/',
   azimageUrl_hub:'https://everdevuat.blob.core.windows.net/hubs/',
   azimageUrl_pic:'https://everdevuat.blob.core.windows.net/profilepic/',

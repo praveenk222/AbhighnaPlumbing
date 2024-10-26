@@ -11,7 +11,7 @@ import { NgxSpinnerService } from 'ngx-spinner';
     constructor(private spinner: NgxSpinnerService) {}
   
     intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-      alert('');
+      alert();
       this.spinner.show();
   
       return next.handle(request)

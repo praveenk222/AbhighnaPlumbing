@@ -7,9 +7,8 @@ import { environment } from '../environments/environment';
   providedIn: 'root'
 })
 export class MeasuremetTypeService {
-  apiUrl=environment.apiurl;
   constructor(private http: HttpClient) {}
-
+  apiUrl=environment.apiurl;
   // POST request to create a new lookup
   createLookup(newLookup: any): Observable<any> {
     return this.http.post(this.apiUrl+`/lookup`, newLookup);

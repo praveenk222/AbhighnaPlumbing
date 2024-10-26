@@ -1,47 +1,37 @@
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { OverlayContainer } from '@angular/cdk/overlay';
 import { HttpClient } from '@angular/common/http';
-import {  HostBinding, OnDestroy, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { Component, HostBinding, OnDestroy, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 import { MatSidenav } from '@angular/material/sidenav';
-import { NgxSpinnerService } from 'ngx-spinner';
-import{filter} from 'rxjs/operators'
-import { UsersService } from './services/users.service';
-import { SweetAlertServiceService } from './services/sweet-alert-service.service';
-import { AuthService } from './services/auth.service';
-import { Component, inject } from '@angular/core';
-import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
-import { map, shareReplay } from 'rxjs/operators';
-import { NavigationStart, Router } from '@angular/router';
+import{filter} from 'rxjs/operators'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit{
-  isLoggedIn = !!localStorage.getItem('isLoggedIn');
   title = 'EverAdminPanel';
   private sidenav: MatSidenav;
-  code:number;
+code:number;
   public isMenuOpen = true;
-  loginForm: FormGroup;
-  navitems: any;
-  showHead:boolean=false;
- 
-    constructor(private overlay:OverlayContainer,
-    private fb: FormBuilder,private router:Router,private users:UsersService,
-    private spinner:NgxSpinnerService,private auths:AuthService,
-    private salert:SweetAlertServiceService){
-      this.isMenuOpen = false;
-   
-      console.log('login user',this.auths.getCurrentUser())
+constructor(private breakpointObserver: BreakpointObserver,private overlay:OverlayContainer,private http:HttpClient){
+  this.isMenuOpen = false;
 
 }
- 
-      
+  get isHandset(): boolean {
+    return this.breakpointObserver.isMatched(Breakpoints.Handset);
+  }
+  ngDoCheck() {
+    if (this.isHandset) {
+      this.isMenuOpen = false;
+    } else {
+      this.isMenuOpen = true;
+    }      
+}
 ngOnInit() {
-  this.toggleControl
-  .valueChanges.subscribe(
+  this.toggleControl.valueChanges.subscribe(
     (darkMode:any)=>{
       this.className= darkMode ? this.darkClassName : this.lightClassName;
       if(darkMode){
@@ -60,7 +50,6 @@ ngOnInit() {
 
 
 }
-
 toggleControl = new FormControl(false);
 @HostBinding('class')  className = '';
 darkClassName = 'theme-dark';
@@ -68,18 +57,14 @@ lightClassName = 'theme-light';
 pincode(){
  
 }
+// handle(event:any){console.log(this.code.toString().length)
+//   if(this.code.toString().length == 6){
+//   this.http.get(`https://api.postalpincode.in/pincode/${this.code}`).subscribe((res:any)=>{
+//     console.log(res)
+//   })
+// }
+// }
 
-  // Example login method
-  login() {
-    this.isLoggedIn = true;
-    localStorage.setItem('isLoggedIn', 'true');  // Update login state in local storage
-    this.router.navigate(['/home']);  // Redirect to home page after login
-  }
 
-  logout() {
-    this.isLoggedIn = false;
-    localStorage.removeItem('isLoggedIn');
-    this.router.navigate(['/login']);  // Redirect to login page after logout
-  }
 
 }

@@ -1,0 +1,86 @@
+<!-- inventory-page.component.html -->
+<div class="card-container">
+    <mat-card class="inventory-card" *ngFor="let item of inventoryItems">
+      <mat-card-header>
+        <mat-card-title>{{ item.title }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Stock: {{ item.stock }}</p>
+        <p>Price: {{ item.price | currency }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="container">
+  <mat-card class="tabs-card">
+    <mat-card-header>
+      <mat-card-title>Inventory Details</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-tab-group>
+        <mat-tab label="Tab 1">
+          <table mat-table [dataSource]="tabData1" class="mat-elevation-z8">
+            <ng-container matColumnDef="itemName">
+              <th mat-header-cell *matHeaderCellDef> Item Name </th>
+              <td mat-cell *matCellDef="let element"> {{ element.itemName }} </td>
+            </ng-container>
+            
+            <ng-container matColumnDef="quantity">
+              <th mat-header-cell *matHeaderCellDef> Quantity </th>
+              <td mat-cell *matCellDef="let element"> {{ element.quantity }} </td>
+            </ng-container>
+            
+            <ng-container matColumnDef="location">
+              <th mat-header-cell *matHeaderCellDef> Location </th>
+              <td mat-cell *matCellDef="let element"> {{ element.location }} </td>
+            </ng-container>
+  
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+        </mat-tab>
+        <mat-tab label="Tab 2">
+          <table mat-table [dataSource]="tabData2" class="mat-elevation-z8">
+            <ng-container matColumnDef="itemName">
+              <th mat-header-cell *matHeaderCellDef> Item Name </th>
+              <td mat-cell *matCellDef="let element"> {{ element.itemName }} </td>
+            </ng-container>
+  
+            <ng-container matColumnDef="quantity">
+              <th mat-header-cell *matHeaderCellDef> Quantity </th>
+              <td mat-cell *matCellDef="let element"> {{ element.quantity }} </td>
+            </ng-container>
+  
+            <ng-container matColumnDef="location">
+              <th mat-header-cell *matHeaderCellDef> Location </th>
+              <td mat-cell *matCellDef="let element"> {{ element.location }} </td>
+            </ng-container>
+  
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+        </mat-tab>
+        <mat-tab label="Tab 3">
+          <table mat-table [dataSource]="tabData3" class="mat-elevation-z8">
+            <ng-container matColumnDef="itemName">
+              <th mat-header-cell *matHeaderCellDef> Item Name </th>
+              <td mat-cell *matCellDef="let element"> {{ element.itemName }} </td>
+            </ng-container>
+  
+            <ng-container matColumnDef="quantity">
+              <th mat-header-cell *matHeaderCellDef> Quantity </th>
+              <td mat-cell *matCellDef="let element"> {{ element.quantity }} </td>
+            </ng-container>
+  
+            <ng-container matColumnDef="location">
+              <th mat-header-cell *matHeaderCellDef> Location </th>
+              <td mat-cell *matCellDef="let element"> {{ element.location }} </td>
+            </ng-container>
+  
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+        </mat-tab>
+      </mat-tab-group>
+    </mat-card-content>
+  </mat-card>
+</div>
