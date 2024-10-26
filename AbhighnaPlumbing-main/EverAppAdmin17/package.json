@@ -29,7 +29,7 @@
     "jspdf": "^2.5.2",
     "ng2-charts": "^5.0.4",
     "ng2-charts-schematics": "^0.1.7",
-    "ngx-spinner": "^16.0.2",
+    "ngx-spinner": "^17.0.0",
     "ngx-toastr": "^18.0.0",
     "ngx-webcam": "^0.4.1",
     "node-modules": "^1.0.1",

@@ -37,6 +37,7 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { MatTreeModule } from "@angular/material/tree";
 import { NgChartsModule } from "ng2-charts";
+import { NgxSpinnerModule } from "ngx-spinner";
 
 @NgModule({
   imports: [
@@ -76,7 +77,8 @@ import { NgChartsModule } from "ng2-charts";
     MatToolbarModule,
     MatTooltipModule,
     MatTreeModule,
-    NgChartsModule
+    NgChartsModule,
+    NgxSpinnerModule
   ],
   declarations: [],
   exports: [
@@ -115,7 +117,8 @@ import { NgChartsModule } from "ng2-charts";
     MatToolbarModule,
     MatTooltipModule,
     MatTreeModule,
-    NgChartsModule
+    NgChartsModule,
+    NgxSpinnerModule
   ]
 })
 export class MaterialModule {}

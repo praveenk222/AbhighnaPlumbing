@@ -9,7 +9,8 @@ export const environment = {
 // apiurl:'http://localhost:8080/api/v1/adminweb/',
 // m_apiurl:'http://localhost:8080/api/',
 m_apiurl:'https://everbackend.onrender.com/api',
-apiurl:'https://everbackend.onrender.com/api/v1/adminweb/',
+// apiurl:'https://everbackend.onrender.com/api/v1/adminweb/',
+apiurl:'https://plumbing-9l4v.onrender.com/api',
 
   // apiurl:'https://172.188.80.209:8443/api/',
   azimageUrl_hub:'https://everdevuat.blob.core.windows.net/hubs/',

@@ -40,7 +40,8 @@ export class AppComponent implements OnInit{
  
       
 ngOnInit() {
-  this.toggleControl.valueChanges.subscribe(
+  this.toggleControl
+  .valueChanges.subscribe(
     (darkMode:any)=>{
       this.className= darkMode ? this.darkClassName : this.lightClassName;
       if(darkMode){

@@ -50,10 +50,10 @@ show(){
     });
   }
   loginAdmin(data:any):Observable<any>{
-  return this.http.post(`http://localhost:8080/api/members/login`, data);
+  return this.http.post(this.apiUrl+`/members/login`, data);
   }
   signup(data:any):Observable<any>{
-    return this.http.post(this.m_apiUrl+`members`,data)
+    return this.http.post(this.m_apiUrl+`/members`,data)
   }
   uploadFile(file: File, userId: string, fileType: string):Observable<any>{
     const formData = new FormData();
@@ -145,7 +145,7 @@ getordersummeryByBookingNo(bookingNo:string){
   getusertabbyid(){
   }
   getdasboarddata(){
-    return this.http.get(this.apiUrl+'customers/getDashboardData')
+    return this.http.get(this.apiUrl+'/customers/getDashboardData')
   }
   getadminUsers(){
     return this.http.get(this.apiUrl+'customers/getAdminUserList')

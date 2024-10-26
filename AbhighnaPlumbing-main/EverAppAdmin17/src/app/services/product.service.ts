@@ -25,8 +25,6 @@ export class ProductService {
     });
   }
   async getOrders(type: number): Promise<any> {
-
-
     return new Promise((resolve, reject) => {
       this.http.get(this.apiUrl + 'orders/' + type).subscribe(
         (data) => {
