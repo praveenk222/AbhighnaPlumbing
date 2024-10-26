@@ -1,7 +1,7 @@
 <mat-card>
     <mat-card-content>
       <div style="display: flex; align-items: flex-end; justify-content: flex-end; margin-bottom: 16px;">
-        <button mat-button (click)="add()">Add Lookup</button>
+        <button mat-button mat-raised-button color="primary"  (click)="add()">Add Lookup</button>
       </div>
       <form [formGroup]="lookupForm" (ngSubmit)="createNewLookup()" *ngIf="isShow">
         <mat-form-field appearance="fill">

@@ -18,6 +18,7 @@ import { NgxSpinnerService } from 'ngx-spinner';
         .pipe(
           catchError(error => {
             // Handle errors if needed
+            this.spinner.hide();
             return throwError(error);
           }),
           finalize(() => {

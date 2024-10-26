@@ -1,5 +1,9 @@
 <mat-card>
-    <mat-card-title>Order List</mat-card-title>
+    <mat-card-title>
+      <h1 class="mat-h1">Order List</h1>
+      <span class="example-spacer"></span>  
+      <button mat-raised-button color="primary" style="border-radius: 24px;">Add Order</button>
+    </mat-card-title>
     <mat-card-content>
       <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
         <ng-container matColumnDef="CustomerID">
