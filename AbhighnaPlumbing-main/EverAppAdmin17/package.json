@@ -25,6 +25,8 @@
     "@types/googlemaps": "^3.43.3",
     "angular-ng-autocomplete": "^2.0.12",
     "chart.js": "^4.4.5",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.2",
     "ng2-charts": "^5.0.4",
     "ng2-charts-schematics": "^0.1.7",
     "ngx-spinner": "^16.0.2",

@@ -4,17 +4,19 @@
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
-    <mat-nav-list>
-      <a mat-list-item routerLink="/dashboard">Dash board</a>
-      <a mat-list-item routerLink="/getProduct">Product List</a>
-      <a mat-list-item routerLink="/orderlist">order list</a>
-      <a mat-list-item routerLink="/lookup">LookUp</a>
-      <a mat-list-item routerLink="/mlookup">Mesurments </a>
+    <mat-nav-list class="header-links" >
+      <a mat-list-item routerLink="/dashboard" routerLinkActive="active">Dash board</a>
+      <a mat-list-item routerLink="/getProduct" routerLinkActive="active">Product List</a>
+      <a mat-list-item routerLink="/orderlist" routerLinkActive="active">order list</a>
+      <a mat-list-item routerLink="/lookup" routerLinkActive="active">LookUp</a>
+      <a mat-list-item routerLink="/mlookup" routerLinkActive="active">Mesurments </a>
+      <a mat-list-item routerLink="/inventory" routerLinkActive="active">Inventory </a>
+      <a mat-list-item routerLink="/reciept" routerLinkActive="active">Invoice </a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
-      @if (isHandset$ | async) {
+  
         <button
           type="button"
           aria-label="Toggle sidenav"
@@ -22,7 +24,7 @@
           (click)="drawer.toggle()">
           <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
         </button>
-      }
+   
    
     </mat-toolbar>
     <router-outlet></router-outlet>
