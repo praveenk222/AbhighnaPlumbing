@@ -7,42 +7,38 @@ import html2canvas from 'html2canvas';
   styleUrl: './reciept.component.css'
 })
 export class RecieptComponent {
-  order = {
-    id: '12345',
-    customerName: 'John Doe',
-    date: new Date().toLocaleDateString(),
-    items: [
-      { name: 'Product 1', price: 29.99 },
-      { name: 'Product 2', price: 49.99 },
-    ],
-    total: 79.98
-  };
+  invoiceNumber = 'INV-1001';
+  invoiceDate = new Date();
+  customerName = 'John Doe';
+  customerAddress = '123 Elm Street, Springfield';
+  items = [
+    { name: 'Product 1', quantity: 2, price: 10.0,amount:10.0 },
+    { name: 'Product 2', quantity: 1, price: 15.0 ,amount:10.0},
+    { name: 'Product 3', quantity: 3, price: 7.5 ,amount:10.0}
+  ];
 
-  downloadPDF() {
-    const data = document.getElementById('receipt');
-    if (data) {
-      html2canvas(data).then(canvas => {
-        const imgData = canvas.toDataURL('image/png');
-        const pdf = new jsPDF();
-        const imgWidth = 190; // Adjust based on your layout
-        const pageHeight = pdf.internal.pageSize.height;
-        const imgHeight = (canvas.height * imgWidth) / canvas.width;
-        let heightLeft = imgHeight;
+  calculateTotal() {
+    return this.items.reduce((total, item) => total + item.quantity * item.price, 0);
+  }
+  tax = 148;
+  // calculateTotal() {
+  //   return this.items.reduce((total, item) => total + item.amount, 0);
+  // }
 
-        let position = 0;
-
-        pdf.addImage(imgData, 'PNG', 10, position, imgWidth, imgHeight);
-        heightLeft -= pageHeight;
-
-        while (heightLeft >= 0) {
-          position = heightLeft - imgHeight;
-          pdf.addPage();
-          pdf.addImage(imgData, 'PNG', 10, position, imgWidth, imgHeight);
-          heightLeft -= pageHeight;
-        }
-
-        pdf.save('order-receipt.pdf');
-      });
+  calculateGrandTotal() {
+    return this.calculateTotal() + this.tax;
+  }
+  printInvoice() {
+    const printContents = document.getElementById('invoice')!.innerHTML;
+    const printWindow = window.open('', '', 'height=600,width=800');
+    if (printWindow) {
+      printWindow.document.write('<html><head><title>Print Invoice</title>');
+      printWindow.document.write('<style>/* Add any custom styles for printing here */</style>');
+      printWindow.document.write('</head><body >');
+      printWindow.document.write(printContents);
+      printWindow.document.write('</body></html>');
+      printWindow.document.close();
+      printWindow.print();
     }
   }
 }
