@@ -76,6 +76,9 @@ import { MaterialModule } from './Modules/material.module';
 import { SuccessInterceptor } from './services/toastersuccess.interceptor';
 import { InventoryComponent } from './inventory/inventory.component';
 import { RecieptComponent } from './reciept/reciept.component';
+import { PlumbingListComponent } from './inventory/plumbing-list/plumbing-list.component';
+import { ElectricListComponent } from './inventory/electric-list/electric-list.component';
+import { SantrylistComponent } from './inventory/santrylist/santrylist.component';
 
 @NgModule({
   declarations: [
@@ -91,6 +94,9 @@ import { RecieptComponent } from './reciept/reciept.component';
     DashbordComponent,
     InventoryComponent,
     RecieptComponent,
+    PlumbingListComponent,
+    ElectricListComponent,
+    SantrylistComponent,
 
   ],
   imports: [

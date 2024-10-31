@@ -34,6 +34,10 @@ this.spinner.show();
             console.log(res.Permissions);
             this.router.navigate(['/dashboard'])
           }
+          },
+          (error)=>{
+            this.spinner.hide();
+            this.salert.showFailure('Login failed')
         }
       )
     }

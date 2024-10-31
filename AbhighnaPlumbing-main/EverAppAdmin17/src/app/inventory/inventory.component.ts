@@ -1,4 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { ProductService } from '../services/product.service';
+import { ProductDetailsService } from '../services/product-details.service';
+import { MatTableDataSource } from '@angular/material/table';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
+import { Router } from '@angular/router';
+import { SweetAlertServiceService } from '../services/sweet-alert-service.service';
 interface InventoryItem {
   title: string;
   stock: number;
@@ -17,27 +24,51 @@ interface TabData {
   styleUrl: './inventory.component.css'
 })
 export class InventoryComponent {
-  displayedColumns: string[] = ['itemName', 'quantity', 'location'];
+  displayedColumns: string[] = ['ProductID', 'Name','Type', 'Measurement','UnitPrice', 'OldPrice', 'Discount', 'UnitInStock', 'ProductAvailable', 'ShortDescription','actions'];
+  dataSourceS = new MatTableDataSource<any>([]);
+  dataSourceP = new MatTableDataSource<any>([]);
+  dataSourceE = new MatTableDataSource<any>([]);
+  pageSizeOptions: number[] = [5, 10, 20];
+  totalItems: number = 100;
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+  plumb: any;
+  santry: any;
+  Elec: any;
 
+  constructor(private productService: ProductDetailsService,private alerts:SweetAlertServiceService,
+    private router:Router) {
+      this.getProduct();
+  }
   inventoryItems: InventoryItem[] = [
     { title: 'Item 1', stock: 10, price: 100 },
-    { title: 'Item 2', stock: 20, price: 150 },
-    { title: 'Item 3', stock: 15, price: 200 },
-    { title: 'Item 4', stock: 25, price: 250 },
+   
   ];
 
-  tabData1: TabData[] = [
-    { itemName: 'Item 1', quantity: 5, location: 'Warehouse A' },
-    { itemName: 'Item 2', quantity: 8, location: 'Warehouse B' },
-  ];
+  selectedTabValue(event:any){
+    // switch(event.tab.textLabel){
+    //   case 'plumb':
+    //   this.dataSourceP=this.plumb;
+    //   break;
+    //   case 'santry':
+    //   this.dataSourceS=this.santry;
 
-  tabData2: TabData[] = [
-    { itemName: 'Item 3', quantity: 10, location: 'Warehouse C' },
-    { itemName: 'Item 4', quantity: 12, location: 'Warehouse D' },
-  ];
+    //   break;
+    //   case 'elect':
+    //   this.dataSourceE=this.Elec;
 
-  tabData3: TabData[] = [
-    { itemName: 'Item 5', quantity: 20, location: 'Warehouse E' },
-    { itemName: 'Item 6', quantity: 25, location: 'Warehouse F' },
-  ];
+    //   break;
+
+    // }
+  }
+  getProduct() {
+    this.productService.getProductDetails().subscribe((res: any) => {
+    
+      if(res){
+this.plumb=res.filter((x:any)=>x.CategoryID == 1);
+this.santry=res.filter((x:any)=>x.CategoryID == 2);
+this.Elec=res.filter((x:any)=>x.CategoryID == 3);
+        this.totalItems=res.length;
+      }
+    });
+  }
 }

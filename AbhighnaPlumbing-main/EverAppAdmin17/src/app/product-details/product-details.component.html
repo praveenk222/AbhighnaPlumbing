@@ -5,6 +5,9 @@
     <button mat-raised-button color="primary" style="border-radius: 24px;"
     routerLink="/addproduct/0">Add Product</button>
   </mat-card-title>
+  <mat-form-field>
+    <input matInput (keyup)="applyfilter($event)" placeholder="search">
+  </mat-form-field>
 </div>
 
 <div class="mat-elevation-z8 table-container">

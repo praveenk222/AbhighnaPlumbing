@@ -21,7 +21,7 @@ export class DashbordComponent {
   // constructor(private dialogService: DialogPopupService) {
   constructor(private dialog:MatDialog,private us:UsersService) {
    // this.openDialog();
-   this.getdasboarData()
+  //  this.getdasboarData()
   }
 ngOnInit(){
   

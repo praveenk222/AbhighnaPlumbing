@@ -1,41 +1,41 @@
-import { Component, ViewChild } from '@angular/core';
-import { ProductService } from '../services/product.service';
-import { ProductDetailsService } from '../services/product-details.service';
+import { Component, Input, SimpleChanges, ViewChild } from '@angular/core';
+import { ProductDetailsService } from '../../services/product-details.service';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { Router } from '@angular/router';
-import { SweetAlertServiceService } from '../services/sweet-alert-service.service';
+import { SweetAlertServiceService } from '../../services/sweet-alert-service.service';
 
 @Component({
-  selector: 'app-product-details',
-  templateUrl: './product-details.component.html',
-  styleUrl: './product-details.component.css'
+  selector: 'app-santrylist',
+  templateUrl: './santrylist.component.html',
+  styleUrl: './santrylist.component.css'
 })
-export class ProductDetailsComponent {
+export class SantrylistComponent {
   displayedColumns: string[] = ['ProductID', 'Name','Type', 'Measurement','UnitPrice', 'OldPrice', 'Discount', 'UnitInStock', 'ProductAvailable', 'ShortDescription','actions'];
   dataSource = new MatTableDataSource<any>([]);
   pageSizeOptions: number[] = [5, 10, 20];
   totalItems: number = 100;
   @ViewChild(MatPaginator) paginator: MatPaginator;
-
+  @Input() parentData!: any;
   constructor(private productService: ProductDetailsService,private alerts:SweetAlertServiceService,
     private router:Router) {
-    this.getProduct();
+    // this.getProduct();
   }
 
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
   }
-
+  ngOnChanges(changes: SimpleChanges) {
+    if (changes['parentData'] && changes['parentData'].currentValue) {
+      this.getProduct();
+      this.dataSource.paginator = this.paginator;
+      
+    }
+  }
   getProduct() {
-    this.productService.getProductDetails().subscribe((res: any) => {
-      this.dataSource.data = res;
-      if(res){
-
-        this.totalItems=res.length;
-      }
-    });
+    this.dataSource.data=this.parentData;
+    this.totalItems=this.parentData.length;
   }
   editProduct(id: any) {
     this.router.navigateByUrl(`addproduct/${id}`);
