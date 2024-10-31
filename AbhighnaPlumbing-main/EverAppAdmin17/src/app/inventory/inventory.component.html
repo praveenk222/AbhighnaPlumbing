@@ -1,12 +1,12 @@
 <!-- inventory-page.component.html -->
 <div class="card-container">
-    <mat-card class="inventory-card" *ngFor="let item of inventoryItems">
+    <mat-card class="inventory-card" *ngFor="let item of inventoryCount">
       <mat-card-header>
-        <mat-card-title>{{ item.title }}</mat-card-title>
+        <mat-card-title>{{ item.LookupDescription }}</mat-card-title>
       </mat-card-header>
       <mat-card-content>
-        <p>Stock: {{ item.stock }}</p>
-        <p>Price: {{ item.price | currency }}</p>
+        <p>Stock: {{ item.ProductCount }}</p>
+        <!-- <p>Price: {{ item.LookupDescription | currency }}</p> -->
       </mat-card-content>
     </mat-card>
   </div>

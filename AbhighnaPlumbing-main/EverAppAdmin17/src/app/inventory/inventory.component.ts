@@ -34,7 +34,7 @@ export class InventoryComponent {
   plumb: any;
   santry: any;
   Elec: any;
-
+  inventoryCount:any;
   constructor(private productService: ProductDetailsService,private alerts:SweetAlertServiceService,
     private router:Router) {
       this.getProduct();
@@ -45,20 +45,7 @@ export class InventoryComponent {
   ];
 
   selectedTabValue(event:any){
-    // switch(event.tab.textLabel){
-    //   case 'plumb':
-    //   this.dataSourceP=this.plumb;
-    //   break;
-    //   case 'santry':
-    //   this.dataSourceS=this.santry;
 
-    //   break;
-    //   case 'elect':
-    //   this.dataSourceE=this.Elec;
-
-    //   break;
-
-    // }
   }
   getProduct() {
     this.productService.getProductDetails().subscribe((res: any) => {
@@ -68,6 +55,16 @@ this.plumb=res.filter((x:any)=>x.CategoryID == 1);
 this.santry=res.filter((x:any)=>x.CategoryID == 2);
 this.Elec=res.filter((x:any)=>x.CategoryID == 3);
         this.totalItems=res.length;
+        this.getInventory()
+      }
+    });
+  }
+  getInventory() {
+    this.productService.getInventryCount().subscribe((res: any) => {
+    
+      if(res){
+
+        this.inventoryCount=res;
       }
     });
   }

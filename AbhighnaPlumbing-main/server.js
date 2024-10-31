@@ -3,6 +3,7 @@ const cors = require("cors");
 const memberRoute=require("./app/controllers/members/members.router")
 const productRoute=require("./app/controllers/Product/product.route")
 const lookupRoute=require("./app/controllers/Lookup/lookup.route")
+const inventoryRoute=require("./app/controllers/Inventory/inventory.route")
 const orderRoute=require("./app/controllers/Orders/order.route")
 const mesurmentLookupRoute=require("./app/controllers/MesurmentLookup/mesurmentLookup.route")
 const app = express();
@@ -44,6 +45,7 @@ app.use("/api/members", memberRoute);
 app.use("/api/products", productRoute);
 app.use("/api/orders", orderRoute);
 app.use("/api/lookup", lookupRoute);
+app.use("/api/inventory", inventoryRoute);
 app.use("/api/mesurmentlookup", mesurmentLookupRoute);
 
 

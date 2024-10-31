@@ -1,13 +1,16 @@
-<div style="display: flex; align-items: flex-end; justify-content: flex-end; margin-bottom: 16px;">
+<div style="">
   <mat-card-title>
     <h1 class="mat-h1">Produc List</h1>
     <span class="example-spacer"></span>  
-    <button mat-raised-button color="primary" style="border-radius: 24px;"
-    routerLink="/addproduct/0">Add Product</button>
+    <mat-form-field>
+      <input matInput (keyup)="applyfilter($event)" placeholder="search">
+    </mat-form-field>
+    <div>
+
+      <button mat-raised-button color="primary" class="btnclass"
+      routerLink="/addproduct/0">Add Product</button>
+    </div>
   </mat-card-title>
-  <mat-form-field>
-    <input matInput (keyup)="applyfilter($event)" placeholder="search">
-  </mat-form-field>
 </div>
 
 <div class="mat-elevation-z8 table-container">

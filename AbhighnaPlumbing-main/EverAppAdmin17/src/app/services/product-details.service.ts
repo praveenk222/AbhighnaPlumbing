@@ -13,6 +13,9 @@ export class ProductDetailsService {
   getProductDetails():Observable<any>{
    return this.http.get(this.baseUrl+`/products`)
   }
+  getInventryCount():Observable<any>{
+   return this.http.get(this.baseUrl+`/inventory`)
+  }
   getProductDetailsById(id:number):Observable<any>{
    return this.http.get(this.baseUrl+`/products/${id}`)
   }
